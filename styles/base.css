@@ -1,15 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --primary-color: #72BDA3;
+    --secondary-color: #3B322C;
+    --accent-color1: #5e8c61;
+    --accent-color2: #4e6151;
+    --accent-color3: #f1fff6;
+    --border: solid 2px var(--accent-color2);
+    --main-font: "Signika Negative", sans-serif, serif;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: "Karla", sans-serif, arial;
 }
 
-header {
-    background: green;
+header,
+footer {
+    color: var(--accent-color3);
+    background: var(--secondary-color);
+    padding: 50px 10px;
+    text-align: center;
 }
 
 main {
+    padding: 5%;
     height: 100%;
-    background: red;
+    background: var(--primary-color);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+section {
+    padding: 5%;
+    background: var(--accent-color3);
+    margin: 5% 2%;
+    text-align: left;
+    border-radius: 4px;
+}
+
+section a {
+    text-decoration: none;
+    color: black;
 }
