@@ -1,0 +1,10 @@
+@media (min-width: 40em) {
+
+    h2 {
+        font-size: 35px;
+    }
+    
+    section {
+        font-size: 18px;
+    }
+}

@@ -28,7 +28,6 @@ const displayActivity = (activities) => {
             }
 
             activityList.appendChild(linkList);
-
         });
 
         allActivities.appendChild(activityList);
