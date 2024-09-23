@@ -1,0 +1,35 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header,
+footer {
+    padding: 50px 10px;
+    text-align: center;
+}
+
+main {
+    padding: 5%;
+    margin: auto 5%;
+}
+
+.message {
+    padding: 20px;
+    margin: 2% 10%;
+    text-align: center;
+    border-radius: 4px;
+    color: #030516;
+    background-color: #9ec5e6;
+}
+
+.vanish {
+    padding: 20px;
+    margin: 2% 10%;
+    text-align: center;
+    border-radius: 4px;
+    color: #030516;
+    background-color: #9ec5e6;
+}
