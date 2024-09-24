@@ -22,7 +22,7 @@ main {
     text-align: center;
     border-radius: 4px;
     color: #030516;
-    background-color: #9ec5e6;
+    background: #9ec5e6;
 }
 
 .vanish {
@@ -32,4 +32,11 @@ main {
     border-radius: 4px;
     color: #030516;
     background-color: #9ec5e6;
+}
+
+.list {
+    padding: 20px;
+    margin: 0% 10%;
+    text-align: center;
+    background: #a59ee6;
 }
