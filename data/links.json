@@ -8,6 +8,33 @@
                     "title": "Review notes"
                 }
             ]
+        },
+        {
+            "week": "02",
+            "links": [
+                {
+                    "url": "wdd330-notes/w02-readings.docx",
+                    "title": "Review notes"
+                }
+            ]
+        },
+        {
+            "week": "02",
+            "links": [
+                {
+                    "url": "examples/w02-modify-document.html",
+                    "title": "Modifying documents"
+                }
+            ]
+        },
+        {
+            "week": "02",
+            "links": [
+                {
+                    "url": "examples/w02-storage.html",
+                    "title": "LocalStorage and sessionStorage"
+                }
+            ]
         }
     ]
 }
