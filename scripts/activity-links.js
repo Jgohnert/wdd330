@@ -23,10 +23,6 @@ const displayActivity = (activities) => {
             linkList.href = link.url.startsWith('http') ? link.url : mainURL + link.url;
             linkList.textContent = link.title;
 
-            if (!link.url.endsWith('.docx')) {
-                anchor.target = '_blank';
-            }
-
             activityList.appendChild(linkList);
         });
 
