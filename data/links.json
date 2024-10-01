@@ -35,6 +35,33 @@
                     "title": "LocalStorage and sessionStorage"
                 }
             ]
+        },
+        {
+            "week": "03",
+            "links": [
+                {
+                    "url": "examples/wdd330-notes/w03-readings.docx",
+                    "title": "Review notes"
+                }
+            ]
+        },
+        {
+            "week": "03",
+            "links": [
+                {
+                    "url": "examples/w03-web-api.html",
+                    "title": "Web APIs"
+                }
+            ]
+        },
+        {
+            "week": "03",
+            "links": [
+                {
+                    "url": "examples/w03-settimeout-setinterval.html",
+                    "title": "setTimeout and setInterval"
+                }
+            ]
         }
     ]
 }
