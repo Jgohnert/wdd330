@@ -56,7 +56,7 @@ audioSource.connect(gainNode).connect(audioCtx.destination);
 
 const myText = document.createElement('div')
 
-myText.className = 'message'
+myText.className = 'message-api'
 myText.textContent = 'This is a text inserted into the document using the DOM API.'
 myText.style.background = '#4a375f';
 myText.style.color = 'white';
