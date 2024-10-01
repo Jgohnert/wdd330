@@ -1,0 +1,65 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgb(169, 132, 212);
+}
+
+header,
+footer {
+    padding: 50px 10px;
+    text-align: center;
+    background: #4a375f;
+    color: white;
+}
+
+main {
+    padding: 5%;
+    margin: auto 5%;
+    height: 100%;
+    text-align: center;
+}
+
+.audio-div {
+    background: rgb(216, 186, 228);
+    margin: auto 20%;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(169, 132, 212);
+    background: rgb(225, 218, 228);
+}
+
+p {
+    margin: 30px auto;
+}
+
+div {
+    text-align: center;
+}
+
+canvas {
+    margin: 2% 20%;
+    background: rgb(216, 186, 228);
+    width: 60%;
+}
+
+.message,
+.message2,
+.set-interval-message,
+.set-interval-message2,
+.numbers {
+    background: rgb(216, 186, 228);
+    margin: 5% 20%;
+    padding: 50px 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+

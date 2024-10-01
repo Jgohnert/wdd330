@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web APIs</title>
+    <meta name="description" content="This is a webpage that shows examples on how to use web API's and their benefits.">
+    <meta name="author" content="Joanna Gohnert">
+    <link rel="stylesheet" href="styles/w03.css">
+  </head>
+  <body>
+    <header>
+      <h1>Web APIs</h1>
+    </header>
+    <main>
+      <p>The rectangle below has been drawn using the Canvas API</p>
+      <canvas></canvas>
+      <p>The code for this audio example is copied from the example in MDN Introduction to web APIs.
+        The Javascript is almost identical, allowing me to learn how the code works using
+        an API to change the volume of the audio.
+      </p>
+      <div class="audio-div">
+        <!-- Track credit: Outfoxing the Fox by Kevin MacLeod under Creative Commons -->
+        <audio src="audio/javascript_apis_introduction_web-audio_outfoxing.mp3"></audio>
+        <button class="paused">Play</button>
+        <br />
+        <p>Volume</p>
+        <input type="range" min="0" max="1" step="0.01" value="1" class="volume" />
+      </div>
+    </main>
+    <footer>Joanna Gohnert</footer>
+    <script src="scripts/w03-web-api.js"></script>
+  </body>
+</html>
