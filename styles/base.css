@@ -49,4 +49,11 @@ section {
 section a {
     text-decoration: none;
     color: black;
+    padding: 10px;
+}
+
+section a:hover {
+    background: var(--accent-color1);
+    color: var(--accent-color3);
+    border-radius: 4px;
 }

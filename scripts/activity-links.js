@@ -9,25 +9,40 @@ async function getActivityLinks() {
     const activities = data.lessons;
 
     displayActivity(activities);
-    console.log(activities)
 }
 
 const displayActivity = (activities) => {
     activities.forEach((activity) => {
         let activityList = document.createElement('li');
-        let activityTitle = document.createTextNode(`Week ${activity.week} - `);
+        let activityTitle = document.createTextNode(`Week ${activity.week}`);
+        let blankLine = document.createElement('p')
 
         activityList.appendChild(activityTitle);
+        blankLine.appendChild(activityList);
+
+        let numberedList = document.createElement('ol');
 
         activity.links.forEach((link) => {
+            let myLinks = document.createElement('li'); 
             let linkList = document.createElement('a');
             linkList.href = link.url.startsWith('http') ? link.url : mainURL + link.url;
             linkList.textContent = link.title;
+            let anotherBlankLine = document.createElement('p')
 
-            activityList.appendChild(linkList);
+            anotherBlankLine.appendChild(linkList)
+            numberedList.appendChild(anotherBlankLine);
+            
+            myLinks.appendChild(linkList);
+            numberedList.appendChild(myLinks);
+
         });
 
+        blankLine.appendChild(numberedList);
+        allActivities.appendChild(blankLine);
+
+        activityList.appendChild(numberedList);
         allActivities.appendChild(activityList);
+        
     });
 }
 
