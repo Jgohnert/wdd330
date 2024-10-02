@@ -9,6 +9,7 @@ async function getActivityLinks() {
     const activities = data.lessons;
 
     displayActivity(activities);
+    console.log(activities)
 }
 
 const displayActivity = (activities) => {
