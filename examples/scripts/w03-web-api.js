@@ -1,3 +1,5 @@
+// The Audio API example below is the example from the MDN Introduction to web APIs.
+
 // The AudioContext() is the Web Audio API. This allows you to do
 // Any type of audio manipulation.
 const audioCtx = new AudioContext();
