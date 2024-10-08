@@ -1,0 +1,53 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgb(212, 132, 205);
+}
+
+header,
+footer {
+    padding: 50px 10px;
+    text-align: center;
+    background: #5f3758;
+    color: white;
+}
+
+main {
+    padding: 5%;
+    text-align: center;
+}
+
+.image-container {
+    margin-bottom: 400px;
+}
+
+.no-error-rino {
+    display: none;
+}
+
+img {
+    background: rgb(228, 186, 221);
+}
+
+p {
+    background: rgb(228, 186, 221);
+    margin: 5% 20%;
+    padding: 50px 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.error-messages {
+    padding: 2%;
+    border-radius: 4px;
+    background: rgb(228, 186, 221);;
+}
+
+.error-messages p {
+    margin: 0%;
+    border-radius: 0%;
+    background: none;
+    padding: 20px;
+}

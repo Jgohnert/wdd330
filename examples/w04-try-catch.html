@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error handling, "try" "catch"</title>
+    <meta name="description" content="This page shows examples of how to use try and catch blocks to prevent errors from 
+    killing your JavaScript code.">
+    <meta name="author" content="Joanna Gohnert">
+    <link rel="stylesheet" href="styles/w04.css">
+  </head>
+  <body>
+    <header>
+      <h1>Error handling, "try" "catch"</h1>
+    </header>
+    <main>
+      <div class="image-container">
+        <p>An image of a rino will appear below this text in five seconds if an error is not found.</p>
+        <picture class="no-error-rino">
+            <img src="https://loremflickr.com/600/400/rino" alt="Image of a rino" width="600" height="400">
+        </picture>
+      </div>
+        <p class="error-Countdown"></p>
+      <div class="error-messages">
+        <h2>Error Messages</h2>
+        <p class="err-name"></p>
+        <p class="err-message"></p>
+        <p class="err-stack"></p>
+        <p class="errString"></p>
+      </div>
+      <div class="error-messages">
+        <p class="my-first-name"></p>
+        <p class="my-last-name"></p>
+        <p>The error below shows the error that happens when you use the throw operator to generate a syntax error message.</p>
+        <p class="error-middle-name"></p>
+      </div>
+    </main>
+    <footer>Joanna Gohnert</footer>
+    <script src="scripts/w04-try-catch.js"></script>
+  </body>
+</html>
