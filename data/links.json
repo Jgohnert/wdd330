@@ -22,7 +22,7 @@
                 },
                 {
                     "url": "examples/w02-storage.html",
-                    "title": "LocalStorage and sessionStorage"
+                    "title": "localStorage and sessionStorage"
                 }
             ]
         },
@@ -40,6 +40,19 @@
                 {
                     "url": "examples/w03-settimeout-setinterval.html",
                     "title": "setTimeout and setInterval"
+                }
+            ]
+        },
+        {
+            "week": "04",
+            "links": [
+                {
+                    "url": "examples/wdd330-notes/w04-readings.docx",
+                    "title": "Review notes"
+                },
+                {
+                    "url": "examples/w04-try-catch.html",
+                    "title": "Error handling"
                 }
             ]
         }
