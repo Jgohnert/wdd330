@@ -5,6 +5,23 @@
     }
     
     section {
-        font-size: 18px;
+        font-size: 20px;
+        padding: 5% 5% 5% 0%;
     }
+
+    .activity {
+        padding-left: 0%;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style-position: inside;
+    }
+
+    ol {
+        list-style-position: inside;
+        text-indent: -1em;
+    }
+
 }
