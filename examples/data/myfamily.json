@@ -1,7 +1,4 @@
 {
-    "myFamilyInformation" : {
-    "familyName": "Gohnert",
-    "familyMembers": 6,
     "eachFamilyMember": [
         {
             "name": "Mark",
@@ -34,5 +31,4 @@
             "birthday": "August 12th"
         }
     ]
-    } 
-}
+} 
