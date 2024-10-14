@@ -1,0 +1,38 @@
+{
+    "myFamilyInformation" : {
+    "familyName": "Gohnert",
+    "familyMembers": 6,
+    "eachFamilyMember": [
+        {
+            "name": "Mark",
+            "gender": "male",
+            "birthday": "October 7th"
+        },
+        {
+            "name": "Nancy",
+            "gender": "female",
+            "birthday": "August 3rd"
+        },
+        {
+            "name": "Tyler",
+            "gender": "male",
+            "birthday": "May 8th"
+        },
+        {
+            "name": "Joanna",
+            "gender": "female",
+            "birthday": "September 25th"
+        },
+        {
+            "name": "Matt",
+            "gender": "male",
+            "birthday": "September 13th"
+        },
+        {
+            "name": "Luke",
+            "gender": "male",
+            "birthday": "August 12th"
+        }
+    ]
+    } 
+}
