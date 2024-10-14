@@ -35,7 +35,7 @@
 // additionally, response.body is a ReadableStream object, it allows you to read the body chunk-by-chunk.
 
 async function fetchTest() {
-    let url = 'https://github.com/Jgohnert/wdd330/data/myfamily.json';
+    let url = 'https://jgohnert.github.io/wdd330/example/data/myfamily.json';
     let response = await fetch(url);
 
     let myFamily = await response.json(); // read response body and parse as JSON
