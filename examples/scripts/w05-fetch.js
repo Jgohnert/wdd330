@@ -34,14 +34,66 @@
 // response.arrayBuffer() – return the response as ArrayBuffer (low-level representation of binary data),
 // additionally, response.body is a ReadableStream object, it allows you to read the body chunk-by-chunk.
 
-async function fetchTest() {
-    let url = 'https://jgohnert.github.io/wdd330/example/data/myfamily.json';
+async function responseJson() {
+
+    let familyMembers = document.querySelector('.family-members');
+
+    let url = 'https://jgohnert.github.io/wdd330/examples/data/myfamily.json';
     let response = await fetch(url);
 
     let myFamily = await response.json(); // read response body and parse as JSON
 
-    alert(myFamily.eachFamilyMember.name[0]);
+    familyMembers.textContent = 
+    `${myFamily.eachFamilyMember[0].name}, 
+    ${myFamily.eachFamilyMember[1].name},
+    ${myFamily.eachFamilyMember[2].name},
+    ${myFamily.eachFamilyMember[4].name},
+    ${myFamily.eachFamilyMember[5].name}`;
 }
 
-fetchTest()
+responseJson()
 
+// Here is how you can do the same thing without using await:
+
+// fetch('https://jgohnert.github.io/wdd330/examples/data/myfamily.json')
+//   .then(response => response.json())
+//   .then(myFamily => familyMembers.textContent = `${myFamily.eachFamilyMember[0].name}`);
+
+// You can also display the json file as text on the html using response.text().
+
+async function responseText() {
+    let jsonAsText = document.querySelector('.json-text')
+    let response = await fetch('https://jgohnert.github.io/wdd330/examples/data/myfamily.json');
+
+    let text = await response.text(); // read response body as text
+
+    jsonAsText.textContent = text.slice(0, 200) + '...';
+}
+
+responseText()
+
+//_______________________________________________________________________________________________________
+
+// Response headers
+
+// This is how you can display the headers by name or iterate over them:
+
+async function responseHeaders() {
+    let responseHeader = document.querySelector('.response-header');
+    let responseHeaders = document.querySelector('.response-headers');
+    let response = await fetch('https://jgohnert.github.io/wdd330/examples/data/myfamily.json');
+
+// Here's how you get one header
+    responseHeader.textContent = response.headers.get('Content-Type');
+
+    let headers = ''
+
+// Here's how you iterate over all headers
+    for (let [key, value] of response.headers) {
+        headers += `${key} = ${value} |`;
+    }
+
+    responseHeaders.textContent = headers;
+}
+
+responseHeaders()

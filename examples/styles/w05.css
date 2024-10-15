@@ -18,3 +18,11 @@ main {
     padding: 5%;
     text-align: center;
 }
+
+div {
+    background: rgb(228, 186, 186);
+    margin: 5% 20%;
+    padding: 50px 20px;
+    border-radius: 4px;
+    text-align: center;
+}

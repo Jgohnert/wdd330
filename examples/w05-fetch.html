@@ -12,9 +12,23 @@
     <header>
       <h1>Fetch</h1>
     </header>
-    <nav></nav>
-    <main></main>
-    <footer>Joanna Gohnert | Footer</footer>
+    <main>
+      <h2>My family Names</h2>
+      <div>
+        <p>Below shows a list of my family's names that was parsed as JSON using response.json() after the url was fetched.</p>
+        <p class="family-members"></p>
+      </div>
+      <div>
+        <p>This text is the json myfamily.json file read as text using response.text()</p>
+        <p class="json-text"></p>
+      </div>
+      <div>
+        <p>Using response.headers, you can get all the individual headers.</p>
+        <p class="response-header"></p>
+        <p class="response-headers"></p>
+      </div>
+    </main>
+    <footer>Joanna Gohnert</footer>
     <script src="scripts/w05-fetch.js"></script>
   </body>
 </html>
