@@ -55,6 +55,23 @@
                     "title": "Error handling"
                 }
             ]
+        },
+        {
+            "week": "05",
+            "links": [
+                {
+                    "url": "examples/wdd330-notes/w05-readings.docx",
+                    "title": "Review notes"
+                },
+                {
+                    "url": "examples/w05-fetch.html",
+                    "title": "Fetch"
+                },
+                {
+                    "url": "examples/w05-rest-parameters.html",
+                    "title": "Rest Parameters"
+                }
+            ]
         }
     ]
 }
