@@ -72,6 +72,23 @@
                     "title": "Rest Parameters"
                 }
             ]
+        },
+        {
+            "week": "06",
+            "links": [
+                {
+                    "url": "examples/wdd330-notes/w06-readings.docx",
+                    "title": "Review notes"
+                },
+                {
+                    "url": "examples/w06-form-properties.html",
+                    "title": "Form Properties"
+                },
+                {
+                    "url": "examples/w06-formdata-objects.html",
+                    "title": "Formdata Objects"
+                }
+            ]
         }
     ]
 }

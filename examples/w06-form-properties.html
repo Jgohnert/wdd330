@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form properties and methods</title>
+    <meta name="description" content="Form properties and methods is demonstrated with examples on this webpage.">
+    <meta name="author" content="Joanna Gohnert">
+    <link rel="stylesheet" href="styles/w06.css">
+  </head>
+  <body>
+    <header>
+      <h1>Form properties and methods</h1>
+    </header>
+    <main>
+      <form class="form1" name="name">
+        <legend>This is a form that displays my first and last name</legend>
+        <input name="fname" value="Joanna"></input>
+        <input name="mname" value="L"></input>
+        <input name="lname" value="Gohnert"></input>
+      </form>
+      <form>
+        <legend>This radio form show that shows form.elements[name] is a collection.</legend>
+        <label><input type="radio" name="pet" value="dog"> Dog</label>
+        <label><input type="radio" name="pet" value="cat"> Cat</label>
+        <label><input type="radio" name="pet" value="turtle"> Turtle</label>
+        <label><input type="radio" name="pet" value="hamster"> Hamster</label>
+        <legend>The object HTMLInputElement shows the radio shown above as a collection of multiple elements with the same name.</legend>
+        <label class="collection"></label>
+      </form>
+      <form>
+        <legend>The value in the textarea below was my name, Joanna Gohnert, but it's been changed using .value</legend>
+        <textarea name="myfullname">Joanna Gohnert</textarea>
+      </form>
+      <form>
+        <legend>Using select.options, select.value, and select.selectedIndex, I can select any option. And using the multiple attribute, I can select more than one option.</legend>
+        <select class="selection-one">
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+        </select>
+        <select class="selection-two">
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+        </select>
+        <select class="selection-three">
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+        </select>
+        <select class="selection-four" multiple>
+          <option value="blue" selected>Blue</option>
+          <option value="yellow" selected>Yellow</option>
+          <option value="green">Green</option>
+          <option value="green" selected>Red</option>
+        </select>
+      </form>
+
+    </main>
+    <footer>Joanna Gohnert</footer>
+    <script src="scripts/w06-form-properties.js"></script>
+  </body>
+</html>

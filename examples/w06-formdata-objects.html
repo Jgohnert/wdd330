@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormData Objects</title>
+    <meta name="description" content="The content on this page shows the use of FormData Objects.
+    It gives examples on how it works.">
+    <meta name="author" content="Joanna Gohnert">
+    <link rel="stylesheet" href="styles/w06.css">
+  </head>
+  <body>
+    <header>
+      <h1>FormData Objects</h1>
+    </header>
+    <main>
+      <form id="myForm">
+        <fieldset class="formdata-form">
+          <legend>After the information of the form has been submitted, it will be a formdata object</legend>
+          <label>Name* <input type="text" id="username" name="name" required></label>
+          <label>Password* <input type="password" id="password" name="password" pattern="^(?=.*[a-zA-Z])(?=.*[0-9]).{8,}$" title="Your password must be at least 8 characters long and contain at least one letter and one number." required></label>
+          <label>number* <input type="tel" id="phone" name="phone" required></label>
+          <label>Email* <input type="email" id="email" name="email" title="Your email must be a valid email address." required></label>
+        </fieldset>
+        <input type="submit" value="Send Information">
+      </form>
+    </main>
+    <footer>Joanna Gohnert</footer>
+    <script src="scripts/w06-formdata-objects.js"></script>
+  </body>
+</html>
