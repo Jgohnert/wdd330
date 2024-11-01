@@ -21,8 +21,8 @@ function loadTemplate(path) {
 }
 
 export function loadHeaderAndFooter() {
-    const headerTemplate = loadTemplate("/partials/header.html");
-    const footerTemplate = loadTemplate("/partials/footer.html");
+    const headerTemplate = loadTemplate("./partials/header.html");
+    const footerTemplate = loadTemplate("./partials/footer.html");
     const parentHeader = document.querySelector('#main-header');
     const parentFooter = document.querySelector('#main-footer');
     renderWithTemplate(headerTemplate, parentHeader, {}, hamburgerMenu);
