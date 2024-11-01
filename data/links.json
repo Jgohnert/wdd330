@@ -89,6 +89,19 @@
                     "title": "Formdata Objects"
                 }
             ]
+        },
+        {
+            "week": "07",
+            "links": [
+                {
+                    "url": "examples/w07-css-animations.html",
+                    "title": "CSS Animations"
+                },
+                {
+                    "url": "examples/w07-object-method-this.html",
+                    "title": "Object Method \"this\""
+                }
+            ]
         }
     ]
 }
