@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <meta name="description" content="This webpage will show you how you can do web animations using CSS.">
+    <meta name="author" content="Joanna Gohnert">
+    <link rel="stylesheet" href="styles/w07.css">
+  </head>
+  <body>
+    <header>
+      <h1>CSS Animations</h1>
+    </header>
+    <main>
+        <div class="color-change">
+          <p>The CSS controls the time the transition takes to change while the 
+            JS is what changes the color and when the colors transitions.
+          </p>
+          <p class="count-down"></p>
+        </div>
+        <div class="bird-div">
+          <p>When the button is pressed, an image of a bird will appear, and the background will transform to a dark green.</p>
+          <button id="bird-button">Click for bird</button><br>
+          <img id="bird-image" src="images/bird-1905255_640.jpg" width="200">
+        </div>
+        <div class="message-div">
+          <p>The moving text shows how you can use transform to move paragraphs.</p>
+          <p id="moving-message">Click me to watch the message move back and forth.</p>
+        </div>
+    </main>
+    <footer>Joanna Gohnert</footer>
+    <script src="scripts/w07-css-animations.js"></script>
+  </body>
+</html>

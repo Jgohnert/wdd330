@@ -1,0 +1,104 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgb(151, 212, 132);
+}
+
+header,
+footer {
+    padding: 50px 10px;
+    text-align: center;
+    background: #3f5f37;
+    color: white;
+}
+
+main {
+    padding: 5%;
+    text-align: center;
+}
+
+div {
+    background: rgb(196, 228, 186);
+    margin: 5% 20%;
+    padding: 50px 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* There are 4 properties to describe CSS transitions:
+
+transition-property
+transition-duration
+transition-timing-function
+transition-delay */
+
+.color-change {
+    transition-duration: 5s;
+}
+
+.bird-div {
+    transition-duration: 2s;
+}
+
+#bird-button {
+    cursor: pointer;
+}
+
+#bird-image {
+    display: none;
+}
+
+/* 
+transition-property 
+
+Are a list of properties to animate, such as: left, margin-left, 
+height, color, Or all
+
+transition-duration
+
+Is the time specified for how long the animation should take.
+s = seconds, ms = milliseconds.
+
+transition-delay
+
+Is the delay before the time the animation transition starts.
+
+transition-timing-function
+
+This can control the timing of the animation process. example, 
+moving things faster at the start and slowing it down later.
+*/
+
+.message-div {
+    overflow: hidden;
+    font: 20px;
+    cursor: pointer;
+}
+
+#moving-message {
+    display: inline-block;
+}
+
+#moving-message.animate {
+    animation: backAndForth 20s linear infinite;
+}
+
+@keyframes backAndForth {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(90%); 
+    }
+    50% {
+        transform: translateX(0%); 
+    }
+    75% {
+        transform: translateX(-90%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}

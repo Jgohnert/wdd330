@@ -1,5 +1,23 @@
 @media (min-width: 40em) {
 
+    header {
+        padding-bottom: 15px;
+    }
+
+    #menu {
+		display: none; 
+	}
+
+    .navigation {
+        margin-top: 50px;
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
     h2 {
         font-size: 35px;
     }
