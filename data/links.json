@@ -102,6 +102,15 @@
                     "title": "Object Method \"this\""
                 }
             ]
+        },
+        {
+            "week": "08",
+            "links": [
+                {
+                    "url": "wdd330-notes/w08-readings.docx",
+                    "title": "Review notes"
+                }
+            ]
         }
     ]
 }
