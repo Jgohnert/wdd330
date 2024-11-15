@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Scope - Closure</title>
+    <meta name="description" content="This website is to show you how to use the variable scope, closure. It will
+    give you examples and notes about how it works.">
+    <meta name="author" content="Joanna Gohnert">
+    <link rel="stylesheet" href="styles/w09.css">
+  </head>
+  <body>
+    <header>
+      <h1>Variable Scope - Closure</h1>
+    </header>
+    <main>
+        <div>
+            <p class="div-1"></p>
+            <p>By creating a variable "message" containing the text above, like this:</p>
+            <p>let message;</p>
+            <p>message = "This is the changed message in the variable."</p>
+            <p>You can change the variable without any errors.</p>
+        </div>
+        <div>
+            <p>The text below was done using an Inner and outer Lexical Environment:</p>
+            <p class="div-2"></p>
+        </div>
+        <div>
+            <p>When calling a function using the counter variable multiple times, the number goes up</p>
+            <p class="count-0"></p>
+            <p class="count-1"></p>
+            <p class="count-2"></p>
+            <p class="count-3"></p>
+            <p>A closure is a function that can access its outer variables and remembers it.</p>
+        </div>
+        <div class="div-4">
+            <p>Here is how you can call a random picture of a wolf when calling a function 3 times.</p>
+        </div>
+    </main>
+    <footer>Joanna Gohnert</footer>
+    <script src="scripts/w09-variable-scope-closure.js"></script>
+  </body>
+</html>

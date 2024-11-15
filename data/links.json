@@ -111,6 +111,27 @@
                     "title": "Review notes"
                 }
             ]
+        },
+        {
+            "week": "09",
+            "links": [
+                {
+                    "url": "examples/wdd330-notes/w09-challenge-proposals.docx",
+                    "title": "Challenge Proposal"
+                },
+                {
+                    "url": "examples/w09-currying.html",
+                    "title": "Currying"
+                },
+                {
+                    "url": "examples/w09-drawing-graphics.html",
+                    "title": "Graphics"
+                },
+                {
+                    "url": "examples/w09-variable-scope-closure.html",
+                    "title": "variable Scope Closure"
+                }
+            ]
         }
     ]
 }
