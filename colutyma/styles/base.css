@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: #143d8f;
+    --secondary-color: #000f1b;
+    --accent-color1: #e0f2e9;
+    --accent-color2: #fa834c;
+    --accent-color3: #823038;
+    --border: solid 2px var(--accent-color3);
+    --main-font: "Host Grotesk", Courier, monospace;
+    --secondary-font: "Audiowide", "Host Grotesk", Courier;
+}
+
+h1, h2, h3 {
+    font-family: var(--secondary-font);
+}
+
+body {
+    font-family: var(--main-font);
+}

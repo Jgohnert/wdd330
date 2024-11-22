@@ -1,0 +1,102 @@
+{
+    "actors": [
+        {
+            "actor": {
+                "name": "Tyler Gohnert",
+                "credentials": "Director, writer, editor, actor",
+                "filmography": [
+                    {
+                        "movie": "Hunt",
+                        "poster": "data/images/hunt.webp",
+                        "Role": "Truck driver"
+                    }
+                ]
+            }
+        },
+        {
+            "actor": {
+                "name": "Luke Gohnert",
+                "credentials": "Actor, writer, art director, producer",
+                "filmography": [
+                    {
+                        "movie": "Hunt",
+                        "poster": "data/images/hunt.webp",
+                        "Role": "Damian Porter"
+                    },
+                    {
+                        "movie": "Celerity",
+                        "poster": "data/images/celerity.webp",
+                        "Role": "Myles Melyne"
+                    },
+                    {
+                        "movie": "2056",
+                        "poster": "data/images/2056.webp",
+                        "Role": "Blake"
+                    }
+                ]
+            }
+        },
+        {
+            "actor": {
+                "name": "Colby Schramel",
+                "credentials": "Actor, fight choreographer",
+                "filmography": [
+                    {
+                        "movie": "Ben Jack and Classified",
+                        "poster": "none.",
+                        "Role": "Classified"
+                    }
+                ]
+            }
+        },
+        {
+            "actor": {
+                "name": "Matthew Gohnert",
+                "credentials": "Actor, co-producer, co-writer",
+                "filmography": [
+                    {
+                        "movie": "Hunt",
+                        "poster": "data/images/hunt.webp",
+                        "Role": "Bently Mayer"
+                    },
+                    {
+                        "movie": "Celerity",
+                        "poster": "data/images/celerity.webp",
+                        "Role": "Atticus"
+                    }
+                ]
+            }
+        },
+        {
+            "actor": {
+                "name": "Sidney Shacter",
+                "credentials": "Actor",
+                "filmography": [
+                    {
+                        "movie": "Hunt",
+                        "poster": "data/images/hunt.webp",
+                        "Role": "Leo"
+                    },
+                    {
+                        "movie": "Celerity",
+                        "poster": "data/images/celerity.webp",
+                        "Role": "General Mortimer"
+                    }
+                ]
+            }
+        },
+        {
+            "actor": {
+                "name": "Zachary Macfarlane",
+                "credentials": "Actor",
+                "filmography": [
+                    {
+                        "movie": "Celerity",
+                        "poster": "data/images/celerity.webp",
+                        "Role": "Corbin Warner, Vome"
+                    }
+                ]
+            }
+        }
+    ]
+}
