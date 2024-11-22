@@ -132,6 +132,15 @@
                     "title": "variable Scope Closure"
                 }
             ]
+        },
+        {
+            "week": "10",
+            "links": [
+                {
+                    "url": "wdd330-notes/w10-readings.docx",
+                    "title": "Review notes"
+                }
+            ]
         }
     ]
 }
