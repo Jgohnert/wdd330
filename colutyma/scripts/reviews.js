@@ -57,7 +57,7 @@ function setReviewValues(filmId) {
     });
 }
 
-// This renders the 3 random featured reviews
+// This renders the 3 random featured reviews on the main page
 export function renderRandomReviews(reviews) {
     const reviewList = document.getElementById("review-list");
     reviewList.innerHTML = "";
@@ -75,16 +75,18 @@ export function renderRandomReviews(reviews) {
         const stars = "★".repeat(fullStars) + "☆".repeat(emptyStars);
     
         userReviews.innerHTML = `
-          <strong>${review.user}</strong>
-          <p>${review.text}</p>
-          <p class="star-rating">${stars}</p>
+          <div>
+            <strong>${review.user}</strong>
+            <p>${review.text}</p>
+            <p class="star-rating">${stars}</p>
+          </div>
         `;
         
         reviewList.appendChild(userReviews);
       });
 }
 
-// This renders the all of the featured reviews
+// This renders the all of the featured reviews on the movie info page
 export function renderReviews(filmId) {
   const reviews = getReviews(filmId);
 

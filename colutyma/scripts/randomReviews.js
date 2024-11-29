@@ -15,8 +15,8 @@ const featuredReviews = document.querySelector("#review-list");
 //     });
 // }
 
-function getRandomReviews(productId) {
-    const reviews = getReviews(productId);
+function getRandomReviews(filmId) {
+    const reviews = getReviews(filmId);
 
     const randomReviews = [];
 
@@ -34,12 +34,28 @@ function getRandomReviews(productId) {
 }
 
 
-export function displayFeaturedReviews(productId) {
-    const threeReviews = getRandomReviews(productId);
-    if (threeReviews.length > 3) {
+export function displayFeaturedReviews(filmId) {
+    const threeReviews = getRandomReviews(filmId);
+    if (threeReviews.length >= 3) {
         renderRandomReviews(threeReviews);
     } else {
-        featuredReviews.innerHTML = "<p>There are currently no reviews. start leaving reviews and be the first to be featured here!</p>";
+        featuredReviews.innerHTML = `
+        <div>
+          <strong>Anonymous</strong>
+          <p>Recently watched 2056, and wow! it's an incredible thriller with so many hidden meanings behind the subtle plot and amazing acting.<p>
+          <p>★★★★★<p>
+        </div>
+        <div>
+          <p>Anonymous<p>
+          <p>Celerity is one of my all time favorites. This new version is much less depressing than the original cut.<p>
+          <p>★★★★☆<p>
+        </div>
+        <div>
+          <p>Anonymous<p>
+          <p>Ben Jack and Classified is hilarious! The skits are clever and the story is so unique. I highly recommend this series.<p>
+          <p>★★★★★<p>
+        </div>
+        `;
     }
 }
 
