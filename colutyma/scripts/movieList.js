@@ -2,8 +2,6 @@ import { fetchMovies } from "./getdata.js"
 
 const filmList = document.querySelector("#film-list");
 
-
-
 async function movieListTemplate() {
     const movies = await fetchMovies();
     let template = "";
