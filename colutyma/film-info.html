@@ -21,11 +21,31 @@
   <body>
     <header class="main-header"></header>
     <main>
-      <div class="Movie-info">film info here... </div>
-      <div id="user-reviews"></div>
+      <div class="Movie-info">
+        <h1 id="movie-name"></h1>
+        <img id="movie-poster" src="" alt="">
+        <div class="about-movie">
+          <p id="movie-rating"></p>
+          <p id="movie-genre"></p>
+          <p>Synopsis</p>
+          <p id="movie-synopsis"></p>
+        </div>
+        <h2>Characters</h2>
+        <div id="all-characters"></div>
+      </div>
+      <div>
+        <h3>Related FILMS</h3>
+        <div id="related-films"></div>
+      </div>
+      <section>
+        <button id="add-to-shipping">Get Movie</button>
+        <div id="user-reviews"></div>
+      </section>
     </main>
     <footer class="main-footer"></footer>
     <script src="scripts/headerfooter.js" type="module"></script>
     <script src="scripts/reviews.js" type="module"></script>
+    <script src="scripts/movieDetails.js" type="module"></script>
+    <script src="scripts/relatedFilms.js" type="module"></script>
   </body>
 </html>

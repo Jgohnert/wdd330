@@ -9,7 +9,7 @@ async function movieListTemplate() {
     movies.forEach((movie) => {
         template += `
         <div>
-          <a href="https://jgohnert.github.io/wdd330/colutyma/film-info.html">
+          <a href="film-info.html?title=${movie.title}">
             <h2>${movie.title}</h2>
             <img src="${movie.poster}" alt="image of ${movie.title} poster">
           </a>
@@ -34,7 +34,12 @@ async function displayMovieList() {
     filmList.innerHTML = allMovies;
 
     // open and close synopsis
-    const synopsisButtons = document.querySelectorAll(".synopsis-button");
+    expandInfo();
+    
+}
+
+export function expandInfo() {
+  const synopsisButtons = document.querySelectorAll(".synopsis-button");
     const synopses = document.querySelectorAll(".synopsis");
 
     synopsisButtons.forEach((synopsisButton, index) => {

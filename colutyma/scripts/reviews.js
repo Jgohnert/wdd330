@@ -1,7 +1,7 @@
 import { getLocalStorage, setLocalStorage} from "./getdata.js";
 // import { displayFeaturedReviews } from "./randomReviews.js"
 
-function renderReviewSection(filmId) {
+export function renderReviewSection(filmId) {
     const reviewSection = document.getElementById("user-reviews");
   
     if (reviewSection) {
@@ -46,9 +46,10 @@ function setReviewValues(filmId) {
         // Get the rating value as an integer
         const rating = parseInt(userRating.value);  
         const userName = "Anonymous";
+        const movieTitle = `${filmId}`
          
         // Save the Reviews with the rating
-        saveReview(filmId, { user: userName, text: newReview, rating: rating });
+        saveReview(filmId, { movie: movieTitle, user: userName, text: newReview, rating: rating });
 
         renderReviews(filmId);
          
@@ -76,7 +77,8 @@ export function renderRandomReviews(reviews) {
     
         userReviews.innerHTML = `
           <div>
-            <strong>${review.user}</strong>
+            <strong>${review.movie}</strong>
+            <p>${review.user}</p>
             <p>${review.text}</p>
             <p class="star-rating">${stars}</p>
           </div>
@@ -93,12 +95,12 @@ export function renderReviews(filmId) {
   renderRandomReviews(reviews)
 
 }
-
+// Get the saved reviews
 export function getReviews(filmId) {
     const reviews = getLocalStorage("reviews") || {};
     return reviews[filmId] || [];
 }
-  
+
 export function saveReview(filmId, review) {
     const reviews = getLocalStorage("reviews") || {};
     if (!reviews[filmId]) {
