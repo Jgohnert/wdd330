@@ -9,16 +9,17 @@ async function movieListTemplate() {
     movies.forEach((movie) => {
         template += `
         <div>
-        <a href="#">
-          <h2>${movie.title}</h2>
-          <img src="${movie.poster}" alt="image of ${movie.title} poster">
+          <a href="#">
+            <h2>${movie.title}</h2>
+            <img src="${movie.poster}" alt="image of ${movie.title} poster">
+          </a>
           <p>${movie.rating}</p>
           <p>Genre: ${movie.genre}</p>
           <p>Synopsis</p>
           <div class="synopsis">
             <button type="button" class="synopsis-button"></button>
             <p>${movie.synopsis}</p>
-          </div></a>
+          </div>
           <a href="#">Get</a>
         </div>
         `;
