@@ -19,3 +19,27 @@ h1, h2, h3 {
 body {
     font-family: var(--main-font);
 }
+
+.synopsis-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.synopsis p {
+    display: none;
+}
+
+.synopsis-button::before {
+    content: "❭";
+    
+}
+
+.synopsis-button.open {
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+}
+
+.open p {
+	display: block;
+}
