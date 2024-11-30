@@ -9,7 +9,7 @@ async function movieListTemplate() {
     movies.forEach((movie) => {
         template += `
         <div>
-          <a href="#">
+          <a href="https://jgohnert.github.io/wdd330/colutyma/film-info.html">
             <h2>${movie.title}</h2>
             <img src="${movie.poster}" alt="image of ${movie.title} poster">
           </a>
