@@ -1,8 +1,10 @@
 import { getLocalStorage, setLocalStorage} from "./getdata.js";
 // import { displayFeaturedReviews } from "./randomReviews.js"
 
+// This is the review section where the user can type their review specific to 
+// the movie they want to critique.
 export function renderReviewSection(filmId) {
-    const reviewSection = document.getElementById("user-reviews");
+    const reviewSection = document.querySelector("#user-reviews");
   
     if (reviewSection) {
 
@@ -34,6 +36,9 @@ export function renderReviewSection(filmId) {
     }
 }
 
+// This creates the format of the user review in local storage. It saves the name 
+// of the user as anonymous, sets the movie title to the movie the user is reviewing,
+// the user's rating, and so on.
 function setReviewValues(filmId) {
     document.getElementById("review-form").addEventListener("submit", (event) => {
         event.preventDefault();
@@ -58,7 +63,7 @@ function setReviewValues(filmId) {
     });
 }
 
-// This renders the 3 random featured reviews on the main page
+// This renders the 2 random featured reviews on the main page
 export function renderRandomReviews(reviews) {
     const reviewList = document.getElementById("review-list");
     reviewList.innerHTML = "";
@@ -88,7 +93,8 @@ export function renderRandomReviews(reviews) {
       });
 }
 
-// This renders the all of the featured reviews on the movie info page
+// This renders all of the featured reviews of a specific 
+// movie on the movie info page.
 export function renderReviews(filmId) {
   const reviews = getReviews(filmId);
 
@@ -101,6 +107,7 @@ export function getReviews(filmId) {
     return reviews[filmId] || [];
 }
 
+// Saves the movie reviews to local storage named "reviews"
 export function saveReview(filmId, review) {
     const reviews = getLocalStorage("reviews") || {};
     if (!reviews[filmId]) {

@@ -6,6 +6,7 @@
             "genre": "Actoin, Mystery, Monster",
             "synopsis": "The Carleton Forest, a breathtaking location for camping, hiking, and sightseeing, has been closed off after increased reports in the area of death and missing persons. Most believe it is the doing of the mythical creature known as Bigfoot. It is up to Bentley Mayer and his team to track down and identify this beast. They'll work together to find the reasons for these mysterious attacks and put an end to the chaos once and for all.",
             "rating": "★★★★☆",
+            "year": "2019",
             "characters": [
                 {
                     "name": "Bently Mayer",
@@ -33,6 +34,7 @@
             "genre": "Action, Adventure Superhero",
             "synopsis": "Many years in the future, a superpowered soldier named Myles Melyne will travel to the present day in order to escape his greatest threat, but the danger will come to him as Myles now needs to defend his new timeline and friends.",
             "rating": "★★★★★",
+            "year": "2020",
             "characters": [
                 {
                     "name": "Myles Melyne",
@@ -43,7 +45,7 @@
                 {
                     "name": "Corbin Warner",
                     "actor": "Zachary Macfarlane",
-                    "description": "none yet",
+                    "description": "Corbin Warner, the seemingly average man, finds purpose and rises to the occasion when he comes in contact with a time traveler.",
                     "charPoster": "data/images/celerity_corbin.webp"
                 },
                 {
@@ -72,6 +74,7 @@
             "genre": "Comedy, Roadtrip, Christmas",
             "synopsis": "Four nobodies with no plans or ambitions receive a phone call, getting an invitation to a popular and well-known Christmas party. Watch them embark on a road trip, getting into all sorts of trouble from the law, drunks, and much more.",
             "rating": "★★★☆☆",
+            "year": "2020",
             "characters": [
                 {
                     "name": "Josh",
@@ -105,6 +108,7 @@
             "genre": "Horror, Action, Thriller",
             "synopsis": "The post-war world is a cold, harsh and merciless place, but not as deadly as the people within it. Blake, a survivor, will need to employ all of his skills to find the one who wronged him.",
             "rating": "★★★★★",
+            "year": "2021",
             "characters": [
                 {
                     "name": "Blake",
@@ -120,6 +124,7 @@
             "genre": "Action, Military",
             "synopsis": "Butros Moukib, a terrorist with great influence and power seeks to take control of United States weaponry to end the government. Chase Landon and Ryker Brooks, the new recruits in the marines, must undergo hard training and preparation to fight this new threat and put an end to his nefarious plot.",
             "rating": "★★★★☆",
+            "year": "2019",
             "characters": [
                 {
                     "name": "Chase Landon",
@@ -153,6 +158,7 @@
             "genre": "Comedy",
             "synopsis": "Ben and Jack, two inseparable best friends, find themselves being hunted by a clandestine organization for reasons unknown to them. Classified, the secret agent will stop at nothing to stop the idiotic duo.",
             "rating": "★★★☆☆",
+            "year": "2016",
             "characters": [
                 {
                     "name": "Ben",
@@ -180,6 +186,7 @@
             "genre": "Action, Comedy",
             "synopsis": "Classified 2 enters the mix when Classified failed to eliminate the ever mounting threat known as the convergence. It must be stopped, or all will fall into chaos. Somehow Ben and Jack stand in the middle of this disaster once again.",
             "rating": "★★★★☆",
+            "year": "2020",
             "characters": [
                 {
                     "name": "Ben",
@@ -207,6 +214,7 @@
             "genre": "Action, Comedy, Adventure",
             "synopsis": "Classified 3 joins the battle after Classified 2 reset reality four years in the past. He now holds the task of eliminating the two and may find unlikely partnership as a greater threat unfolds in the multiverse during a cosmic event known as the collapse.",
             "rating": "★★★★★",
+            "year": "2021",
             "characters": [
                 {
                     "name": "Ben",

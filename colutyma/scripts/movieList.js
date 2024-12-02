@@ -35,9 +35,12 @@ async function displayMovieList() {
 
     // open and close synopsis
     expandInfo();
+
+    const 
     
 }
 
+// Expands some of the info of each movie on the movie list page.
 export function expandInfo() {
   const synopsisButtons = document.querySelectorAll(".synopsis-button");
     const synopses = document.querySelectorAll(".synopsis");

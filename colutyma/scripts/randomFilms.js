@@ -6,13 +6,15 @@ function movieTemplate(movies) {
     movies.forEach((movie) => {
         let template = `
         <section>
-          <img src="${movie.poster}" alt="image of ${movie.title} poster">
-          <h3>${movie.title}<h3>
+          <a href="film-info.html?title=${movie.title}">
+            <img src="${movie.poster}" alt="image of ${movie.title} poster">
+            <h3>${movie.title}<h3>
+          </a>
         </section>
         `;
 
         return featuredFilms.innerHTML += template;
-    })
+    });
 }
 
 async function getRandomFilms() {
@@ -36,7 +38,7 @@ async function getRandomFilms() {
 }
 
 async function displayFeaturedFilms() {
-    const threeFilms = await getRandomFilms() 
+    const threeFilms = await getRandomFilms();
     movieTemplate(threeFilms);
 }
 

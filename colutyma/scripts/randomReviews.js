@@ -1,29 +1,28 @@
-import { getReviews, renderRandomReviews, } from "./reviews.js"
+import { renderRandomReviews, } from "./reviews.js"
+import { getLocalStorage } from "./getdata.js";
 
 const featuredReviews = document.querySelector("#review-list");
 
-// function reviewTemplate(reviews) {
-//     reviews.forEach((review) => {
-//         let template = `
-//         <section>
-//           <h4>${review.user}</h4>
-//           <p>${review.text}</p>
-//           <p>${review.rating}</p>
-//         </section>
-//         `;
-//         featuredReviews.innerHTML += template;
-//     });
-// }
+// This function gets the reviews from local storage and selects 2 
+// random reviews to display on the main page.
+function getRandomReviews() {
+    const reviews = getLocalStorage("reviews");
 
-function getRandomReviews(filmId) {
-    const reviews = getReviews(filmId);
+    const allReviews = []; 
+
+    // Flatten reviews to the allReviews array
+    for (const filmId in reviews) {
+        if (reviews.hasOwnProperty(filmId)) {
+            allReviews.push(...reviews[filmId]); 
+        }
+    }
 
     const randomReviews = [];
 
-    // Get three random reviews
-    while (randomReviews.length < 3 && randomReviews.length < reviews.length) {
-        const randomIndex = Math.floor(Math.random() * reviews.length);
-        const randomReview = reviews[randomIndex];
+    // Get 2 random reviews
+    while (randomReviews.length < 2 && allReviews.length > 0) {
+        const randomIndex = Math.floor(Math.random() * allReviews.length);
+        const randomReview = allReviews[randomIndex];
 
         // Avoid duplicate reviews
         if (!randomReviews.includes(randomReview)) {
@@ -33,10 +32,12 @@ function getRandomReviews(filmId) {
     return randomReviews;
 }
 
-
+// This function displays the 2 randomly selected reviews from 
+// getRandomReviews and displays 2 default reviews if the user has not made
+// a review yet.
 export function displayFeaturedReviews(filmId) {
     const threeReviews = getRandomReviews(filmId);
-    if (threeReviews.length >= 3) {
+    if (threeReviews.length >= 2) {
         renderRandomReviews(threeReviews);
     } else {
         featuredReviews.innerHTML = `
@@ -49,11 +50,6 @@ export function displayFeaturedReviews(filmId) {
           <p>Anonymous<p>
           <p>Celerity is one of my all time favorites. This new version is much less depressing than the original cut.<p>
           <p>★★★★☆<p>
-        </div>
-        <div>
-          <p>Anonymous<p>
-          <p>Ben Jack and Classified is hilarious! The skits are clever and the story is so unique. I highly recommend this series.<p>
-          <p>★★★★★<p>
         </div>
         `;
     }
