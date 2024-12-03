@@ -17,11 +17,16 @@ function movieTemplate(movies) {
     });
 }
 
-async function getRandomFilms() {
+// Filters movies that have posters
+async function filterByPoster() {
     const movies = await fetchMovies();
-
-    // Filters movies that have posters
     const moviesWithPoster = movies.filter(movie => movie.poster !== "data/images/movie-poster-placeholder.webp");
+
+    return getRandomFilms(moviesWithPoster);
+}
+
+export async function getRandomFilms(moviesWithPoster) {
+   
     const randomFilms = [];
 
     // Gets three random movies with posters
@@ -38,7 +43,7 @@ async function getRandomFilms() {
 }
 
 async function displayFeaturedFilms() {
-    const threeFilms = await getRandomFilms();
+    const threeFilms = await filterByPoster();
     movieTemplate(threeFilms);
 }
 

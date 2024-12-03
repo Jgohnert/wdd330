@@ -1,6 +1,7 @@
 import { findMovieBy } from "./getdata.js"
 import { renderReviewSection } from "./reviews.js"
 import { expandInfo } from "./movieList.js"
+import { showRelatedFilms } from "./relatedFilms.js"
 
 export async function findMovieDetails() {
 
@@ -13,6 +14,7 @@ export async function findMovieDetails() {
     
     renderMovieDetails(movie);
     renderReviewSection(movieTitleId);
+    showRelatedFilms(movie);
 }
 
 function renderMovieDetails(movie) {
