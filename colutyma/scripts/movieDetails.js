@@ -22,6 +22,7 @@ function renderMovieDetails(movie) {
     document.querySelector("#movie-poster").src = movie.poster;
     document.querySelector("#movie-poster").alt = movie.title;
     document.querySelector("#movie-rating").innerText = movie.rating;
+    document.querySelector("#movie-year").innerText = movie.year;
     document.querySelector("#movie-genre").innerText = movie.genre;
     document.querySelector("#movie-synopsis").innerText = movie.synopsis;
     

@@ -1,202 +1,195 @@
 {
     "actors": [
         {
-            "actor": {
-                "name": "Tyler Gohnert",
-                "credentials": "Director, writer, editor, actor",
-                "filmography": [
-                    {
-                        "movie": "Hunt",
-                        "poster": "data/images/hunt.webp",
-                        "Role": "Truck driver"
-                    },
-                    {
-                        "movie": "Celerity",
-                        "poster": "data/images/celerity.webp",
-                        "Role": "Reilly Davis"
-                    },
-                    {
-                        "movie": "Bro's",
-                        "poster": "data/images/bros.webp",
-                        "Role": "Snoozin Tyler"
-                    },
-                    {
-                        "movie": "2056",
-                        "poster": "data/images/2056.webp",
-                        "Role": "The psycho, Blue Vest Survivor, Extras"
-                    }
-                ]
-            }
+            "name": "Tyler Gohnert",
+            "credentials": "Director, writer, editor, actor",
+            "filmography": [
+                {
+                    "movie": "Hunt",
+                    "poster": "data/images/hunt.webp",
+                    "Role": "Truck driver"
+                },
+                {
+                    "movie": "Celerity",
+                    "poster": "data/images/celerity.webp",
+                    "Role": "Reilly Davis"
+                },
+                {
+                    "movie": "Bro's",
+                    "poster": "data/images/bros.webp",
+                    "Role": "Snoozin Tyler"
+                },
+                {
+                    "movie": "2056",
+                    "poster": "data/images/2056.webp",
+                    "Role": "The psycho, Blue Vest Survivor, Extras"
+                }
+            ]
         },
         {
-            "actor": {
-                "name": "Luke Gohnert",
-                "credentials": "Actor, writer, art director, producer",
-                "filmography": [
-                    {
-                        "movie": "Hunt",
-                        "poster": "data/images/hunt.webp",
-                        "Role": "Damian Porter, Yeti, S.W.A.T"
-                    },
-                    {
-                        "movie": "Celerity",
-                        "poster": "data/images/celerity.webp",
-                        "Role": "Myles Melyne, Troop, civilian, Soldier, Detective"
-                    },
-                    {
-                        "movie": "Bro's",
-                        "poster": "data/images/bros.webp",
-                        "Role": "Seth, Police Officer, Coolio Luke"
-                    },
-                    {
-                        "movie": "2056",
-                        "poster": "data/images/2056.webp",
-                        "Role": "Blake"
-                    },
-                    {
-                        "movie": "Initiative",
-                        "poster": "data/images/initiative.webp",
-                        "Role": "Brett Conway, Butros Moukib, Shades Guy, Terrorist Goon"
-                    },
-                    {
-                        "movie": "Ben Jack and Classified",
-                        "poster": "data/images/movie-poster-placeholder.webp",
-                        "Role": "Ben"
-                    },
-                    {
-                        "movie": "Ben Jack and Classified 2",
-                        "poster": "data/images/bjc2.webp",
-                        "Role": "Ben"
-                    },
-                    {
-                        "movie": "Ben Jack and Classified 3",
-                        "poster": "data/images/movie-poster-placeholder.webp",
-                        "Role": "Ben"
-                    }
-                ]
-            }
+            "name": "Luke Gohnert",
+            "credentials": "Actor, writer, art director, producer",
+            "filmography": [
+                {
+                    "movie": "Hunt",
+                    "poster": "data/images/hunt.webp",
+                    "Role": "Damian Porter, Yeti, S.W.A.T"
+                },
+                {
+                    "movie": "Celerity",
+                    "poster": "data/images/celerity.webp",
+                    "Role": "Myles Melyne, Troop, civilian, Soldier, Detective"
+                },
+                {
+                    "movie": "Bro's",
+                    "poster": "data/images/bros.webp",
+                    "Role": "Seth, Police Officer, Coolio Luke"
+                },
+                {
+                    "movie": "2056",
+                    "poster": "data/images/2056.webp",
+                    "Role": "Blake"
+                },
+                {
+                    "movie": "Initiative",
+                    "poster": "data/images/initiative.webp",
+                    "Role": "Brett Conway, Butros Moukib, Shades Guy, Terrorist Goon"
+                },
+                {
+                    "movie": "Ben Jack and Classified",
+                    "poster": "data/images/movie-poster-placeholder.webp",
+                    "Role": "Ben"
+                },
+                {
+                    "movie": "Ben Jack and Classified 2",
+                    "poster": "data/images/bjc2.webp",
+                    "Role": "Ben"
+                },
+                {
+                    "movie": "Ben Jack and Classified 3",
+                    "poster": "data/images/movie-poster-placeholder.webp",
+                    "Role": "Ben"
+                }
+            ]
         },
         {
-            "actor": {
-                "name": "Colby Schramel",
-                "credentials": "Actor, fight choreographer",
-                "filmography": [
-                    {
-                        "movie": "Ben Jack and Classified",
-                        "poster": "data/images/movie-poster-placeholder.webp",
-                        "Role": "Classified"
-                    }
-                ]
-            }
+            "name": "Colby Schramel",
+            "credentials": "Actor, fight choreographer",
+            "filmography": [
+                {
+                    "movie": "Ben Jack and Classified",
+                    "poster": "data/images/movie-poster-placeholder.webp",
+                    "Role": "Classified"
+                },
+                {
+                    "movie": "Ben Jack and Classified 2",
+                    "poster": "data/images/bjc2.webp",
+                    "Role": "Classified"
+                }
+            ]
         },
         {
-            "actor": {
-                "name": "Matthew Gohnert",
-                "credentials": "Actor, co-producer, co-writer",
-                "filmography": [
-                    {
-                        "movie": "Hunt",
-                        "poster": "data/images/hunt.webp",
-                        "Role": "Bently Mayer, Big Foot, Gunman, S.W.A.T"
-                    },
-                    {
-                        "movie": "Celerity",
-                        "poster": "data/images/celerity.webp",
-                        "Role": "Atticus, Troop, civilian, Soldier, Detective"
-                    },
-                    {
-                        "movie": "Bro's",
-                        "poster": "data/images/bros.webp",
-                        "Role": "Anthony, Ghetto Matt"
-                    },
-                    {
-                        "movie": "2056",
-                        "poster": "data/images/2056.webp",
-                        "Role": "Goggles"
-                    },
-                    {
-                        "movie": "Initiative",
-                        "poster": "data/images/initiative.webp",
-                        "Role": "Chase Landon, Clipboard Guy, Weapons Dealer, Terrorist Goon"
-                    },
-                    {
-                        "movie": "Ben Jack and Classified",
-                        "poster": "data/images/movie-poster-placeholder.webp",
-                        "Role": "Jack"
-                    },
-                    {
-                        "movie": "Ben Jack and Classified 2",
-                        "poster": "data/images/bjc2.webp",
-                        "Role": "Jack"
-                    },
-                    {
-                        "movie": "Ben Jack and Classified 3",
-                        "poster": "data/images/movie-poster-placeholder.webp",
-                        "Role": "Jack, Evil Jack"
-                    }
-                ]
-            }
+            "name": "Matthew Gohnert",
+            "credentials": "Actor, co-producer, co-writer",
+            "filmography": [
+                {
+                    "movie": "Hunt",
+                    "poster": "data/images/hunt.webp",
+                    "Role": "Bently Mayer, Big Foot, Gunman, S.W.A.T"
+                },
+                {
+                    "movie": "Celerity",
+                    "poster": "data/images/celerity.webp",
+                    "Role": "Atticus, Troop, civilian, Soldier, Detective"
+                },
+                {
+                    "movie": "Bro's",
+                    "poster": "data/images/bros.webp",
+                    "Role": "Anthony, Ghetto Matt"
+                },
+                {
+                    "movie": "2056",
+                    "poster": "data/images/2056.webp",
+                    "Role": "Goggles"
+                },
+                {
+                    "movie": "Initiative",
+                    "poster": "data/images/initiative.webp",
+                    "Role": "Chase Landon, Clipboard Guy, Weapons Dealer, Terrorist Goon"
+                },
+                {
+                    "movie": "Ben Jack and Classified",
+                    "poster": "data/images/movie-poster-placeholder.webp",
+                    "Role": "Jack"
+                },
+                {
+                    "movie": "Ben Jack and Classified 2",
+                    "poster": "data/images/bjc2.webp",
+                    "Role": "Jack"
+                },
+                {
+                    "movie": "Ben Jack and Classified 3",
+                    "poster": "data/images/movie-poster-placeholder.webp",
+                    "Role": "Jack, Evil Jack"
+                }
+            ]
         },
         {
-            "actor": {
-                "name": "Sidney Shacter",
-                "credentials": "Actor",
-                "filmography": [
-                    {
-                        "movie": "Hunt",
-                        "poster": "data/images/hunt.webp",
-                        "Role": "Leo, Gunman"
-                    },
-                    {
-                        "movie": "Celerity",
-                        "poster": "data/images/celerity.webp",
-                        "Role": "General Mortimer, Troop, Savillian"
-                    },
-                    {
-                        "movie": "Bro's",
-                        "poster": "data/images/bros.webp",
-                        "Role": "Eric, Sinister Sid"
-                    },
-                    {
-                        "movie": "Initiative",
-                        "poster": "data/images/initiative.webp",
-                        "Role": "Ryker Brooks, Terrorist Goon"
-                    },
-                    {
-                        "movie": "Ben Jack and Classified 2",
-                        "poster": "data/images/bjc2.webp",
-                        "Role": "Classified 2"
-                    }
-                ]
-            }
+            "name": "Sidney Shacter",
+            "credentials": "Actor",
+            "filmography": [
+                {
+                    "movie": "Hunt",
+                    "poster": "data/images/hunt.webp",
+                    "Role": "Leo, Gunman"
+                },
+                {
+                    "movie": "Celerity",
+                    "poster": "data/images/celerity.webp",
+                    "Role": "General Mortimer, Troop, Savillian"
+                },
+                {
+                    "movie": "Bro's",
+                    "poster": "data/images/bros.webp",
+                    "Role": "Eric, Sinister Sid"
+                },
+                {
+                    "movie": "Initiative",
+                    "poster": "data/images/initiative.webp",
+                    "Role": "Ryker Brooks, Terrorist Goon"
+                },
+                {
+                    "movie": "Ben Jack and Classified 2",
+                    "poster": "data/images/bjc2.webp",
+                    "Role": "Classified 2"
+                }
+            ]
         },
         {
-            "actor": {
-                "name": "Zachary Macfarlane",
-                "credentials": "Actor",
-                "filmography": [
-                    {
-                        "movie": "Hunt",
-                        "poster": "data/images/hunt.webp",
-                        "Role": "Jacob Anderson, S.W.A.T"
-                    },
-                    {
-                        "movie": "Celerity",
-                        "poster": "data/images/celerity.webp",
-                        "Role": "Corbin Warner, Vome, Troop, Soldier"
-                    },
-                    {
-                        "movie": "Bro's",
-                        "poster": "data/images/bros.webp",
-                        "Role": "Josh, Rad Zach"
-                    },
-                    {
-                        "movie": "Ben Jack and Classified 3",
-                        "poster": "data/images/movie-poster-placeholder.webp",
-                        "Role": "Classified 3"
-                    }
-                ]
-            }
+            "name": "Zachary Macfarlane",
+            "credentials": "Actor",
+            "filmography": [
+                {
+                    "movie": "Hunt",
+                    "poster": "data/images/hunt.webp",
+                    "Role": "Jacob Anderson, S.W.A.T"
+                },
+                {
+                    "movie": "Celerity",
+                    "poster": "data/images/celerity.webp",
+                    "Role": "Corbin Warner, Vome, Troop, Soldier"
+                },
+                {
+                    "movie": "Bro's",
+                    "poster": "data/images/bros.webp",
+                    "Role": "Josh, Rad Zach"
+                },
+                {
+                    "movie": "Ben Jack and Classified 3",
+                    "poster": "data/images/movie-poster-placeholder.webp",
+                    "Role": "Classified 3"
+                }
+            ]
         }
     ]
 }
