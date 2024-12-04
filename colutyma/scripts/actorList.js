@@ -12,9 +12,23 @@ async function actorListTemplate() {
           <h3>${actor.name}</h3>
           <p>${actor.credentials}</p>
           <p>${actor.credentials}</p>
-          <img src="" alt="${actor.name}">
+          <img src="${actor.image}" alt="${actor.name}">
+        </div>
+        <div>
+          <h3>Filmography</h3>
+          <img src="${actor.filmography.poster}">
         </div>
         `;
+
+        actor.filmography.forEach((movie) => {
+            template += `
+            <div>
+              <h4>${movie.movie}</h4>
+              <img src="${movie.poster}" alt="${movie.movie} Poster">
+              <p>Role: ${movie.role}</p>
+            </div>
+            `;
+        });
     });
     return template;
 }
