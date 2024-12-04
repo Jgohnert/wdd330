@@ -10,7 +10,6 @@ export function renderReviewSection(filmId) {
 
         reviewSection.innerHTML = `
           <h3>REVIEWS</h3>
-          <hr>
           <ul id="review-list"></ul>
           <h4>Add New Review</h4>
           <form id="review-form">

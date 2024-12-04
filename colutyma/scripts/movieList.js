@@ -16,6 +16,7 @@ async function movieListTemplate() {
           </a>
           <p>${movie.rating}</p>
           <p>Genre: ${movie.genre}</p>
+          <p>Year ${movie.year}<p>
           <p>Synopsis</p>
           <div class="synopsis">
             <button type="button" class="synopsis-button"></button>
@@ -24,9 +25,7 @@ async function movieListTemplate() {
           <a href="#">Get</a>
         </div>
         `;
-
     });
-
     return template;
 }
 
@@ -51,7 +50,7 @@ async function sortMovieList() {
 
   const sortByName = document.querySelector(".sortby-name");
   const sortByRating = document.querySelector(".sortby-rating");
-  const sortByNew = document.querySelector(".sortby-new");
+  const sortByNewest = document.querySelector(".sortby-newest");
 
   sortByName.addEventListener("click", () => {
     movies.sort((a, b) => {
@@ -67,6 +66,14 @@ async function sortMovieList() {
       const rB = getNumerOfStars(b.rating);
 
       return rB - rA;
+    });
+    displayMovieList();
+  });
+
+  sortByNewest.addEventListener("click", () => {
+    movies.sort((a, b) => {
+
+      return b.year - a.year;
     });
     displayMovieList();
   });
