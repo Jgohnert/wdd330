@@ -3,6 +3,7 @@
         {
             "name": "Tyler Gohnert",
             "credentials": "Director, writer, editor, actor",
+            "image": "data/images/actor_tyler.webp",
             "filmography": [
                 {
                     "movie": "Hunt",
@@ -29,6 +30,7 @@
         {
             "name": "Luke Gohnert",
             "credentials": "Actor, writer, art director, producer",
+            "image": "data/images/actor_luke.webp",
             "filmography": [
                 {
                     "movie": "Hunt",
@@ -75,6 +77,7 @@
         {
             "name": "Colby Schramel",
             "credentials": "Actor, fight choreographer",
+            "image": "data/images/actor_colby.webp",
             "filmography": [
                 {
                     "movie": "Ben Jack and Classified",
@@ -91,6 +94,7 @@
         {
             "name": "Matthew Gohnert",
             "credentials": "Actor, co-producer, co-writer",
+            "image": "data/images/actor_matthew.webp",
             "filmography": [
                 {
                     "movie": "Hunt",
@@ -137,6 +141,7 @@
         {
             "name": "Sidney Shacter",
             "credentials": "Actor",
+            "image": "data/images/actor_sidney.webp",
             "filmography": [
                 {
                     "movie": "Hunt",
@@ -168,6 +173,7 @@
         {
             "name": "Zachary Macfarlane",
             "credentials": "Actor",
+            "image": "data/images/actor_zach.webp",
             "filmography": [
                 {
                     "movie": "Hunt",

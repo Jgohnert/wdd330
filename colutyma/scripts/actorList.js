@@ -9,7 +9,10 @@ async function actorListTemplate() {
     actors.forEach((actor) => {
         template += `
         <div>
-          <h2>${actor.name}<h2>
+          <h3>${actor.name}</h3>
+          <p>${actor.credentials}</p>
+          <p>${actor.credentials}</p>
+          <img src="" alt="${actor.name}">
         </div>
         `;
     });
