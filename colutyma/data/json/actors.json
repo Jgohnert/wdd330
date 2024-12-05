@@ -151,7 +151,7 @@
                 {
                     "movie": "Celerity",
                     "poster": "data/images/celerity.webp",
-                    "role": "General Mortimer, Troop, Savillian"
+                    "role": "General Mortimer, Troop, civilian"
                 },
                 {
                     "movie": "Bro's",
@@ -194,6 +194,40 @@
                     "movie": "Ben Jack and Classified 3",
                     "poster": "data/images/movie-poster-placeholder.webp",
                     "role": "Classified 3"
+                }
+            ]
+        },
+        {
+            "name": "Bob Liminal",
+            "credentials": "Actor",
+            "image": "data/images/actor-placeholder.webp",
+            "filmography": [
+                {
+                    "movie": "Celerity",
+                    "poster": "data/images/celerity.webp",
+                    "role": "Police Officer, Civilian"
+                }
+            ]
+        },
+        {
+            "name": "Spencer Schwartz",
+            "credentials": "Actor",
+            "image": "data/images/actor-placeholder.webp",
+            "filmography": [
+                {
+                    "movie": "Celerity",
+                    "poster": "data/images/celerity.webp",
+                    "role": "Soldier"
+                },
+                {
+                    "movie": "Hunt",
+                    "poster": "colutyma/data/images/hunt.webp",
+                    "role": "Michael Heustine"
+                },
+                {
+                    "movie": "Bros",
+                    "poster": "data/images/bros.webp",
+                    "role": "That Guy"
                 }
             ]
         }
