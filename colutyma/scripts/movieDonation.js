@@ -1,8 +1,7 @@
 import { findMovieBy } from "./getdata.js";
+import { submitShippingDetails, submitDonationDetails } from "./submitDonation.js";
 
 const movieOrder = document.querySelector("#movie-order");
-
-const shippingCost = null
 
 // Gets the movie title from the url on the donation page and 
 // puts it into the movieDonationTemplate function and displays it.
@@ -15,13 +14,20 @@ export async function getMovieDetails() {
     const movie = await findMovieBy(movieTitleId);
 
     if (movie) {
-        // This displays the movie the user wants if it has been selected.
+        // This displays the movie and the shipping cost if the user selected a film to recieve.
+        const shippingCost = 2
+
         movieDonationTemplate(movie);
-        AddressFieldset();
+        AddressFieldset(shippingCost);
+        submitShippingDetails(movie, shippingCost);
     } else {
         // This hides the address fieldset if the user does not want 
         // a movie shipped to them when they give a donation.
-        totalCost(shippingCost)
+        // It also handles the submit details if a movie has not been selected to be shipped.
+        const shippingCost = 0
+
+        totalCost(shippingCost);
+        submitDonationDetails();
     }
 }
 
@@ -35,15 +41,13 @@ function movieDonationTemplate(movie) {
     movieOrder.innerHTML = template;
 }
 
-
 getMovieDetails();
 
 // The template form for the address fieldset. It also displays the 
 // shipping cost amount.
-function AddressFieldset() {
+function AddressFieldset(shippingCost) {
     const addressFieldset = document.querySelector("#address-fieldset");
     const shippingCostHtml = document.querySelector("#shipping-cost");
-    const shippingCost = 2
 
     let addressTemplate = `
         <fieldset>
@@ -82,18 +86,12 @@ function totalCost(shippingCost) {
         const orderTotal = document.querySelector("#order-total");
         const donateSubmit = document.querySelector("#donate-submit");
 
-        if ( shippingCost !== null ) {
+
             const totalPlusShipping = (userDonation + shippingCost).toFixed(2);
 
             orderTotal.innerHTML = `$${totalPlusShipping}`;
 
             donateSubmit.style.display = "block";
-
-        } else {
-            orderTotal.innerHTML = `$${userDonation}`;
-
-            donateSubmit.style.display = "block";
-        }
 
     });
 

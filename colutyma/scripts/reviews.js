@@ -1,5 +1,4 @@
 import { getLocalStorage, setLocalStorage} from "./getdata.js";
-// import { displayFeaturedReviews } from "./randomReviews.js"
 
 // This is the review section where the user can type their review specific to 
 // the movie they want to critique.
@@ -39,10 +38,10 @@ export function renderReviewSection(filmId) {
 // of the user as anonymous, sets the movie title to the movie the user is reviewing,
 // the user's rating, and so on.
 function setReviewValues(filmId) {
-    document.getElementById("review-form").addEventListener("submit", (event) => {
+    document.querySelector("#review-form").addEventListener("submit", (event) => {
         event.preventDefault();
         
-        const reviewInput = document.getElementById("review-input");
+        const reviewInput = document.querySelector("#review-input");
         const userRating = document.querySelector("input[name='stars']:checked"); 
     
         const newReview = reviewInput.value.trim();
