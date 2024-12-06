@@ -23,54 +23,42 @@
     <main>
       <h1>COLUTYMA PRODUCTIONS</h1>
       <h2>DONATE</h2>
-      <section id="movie-order">Movies goes here if added to cart...</section>
+      <section id="movie-order"></section>
       <form>
-        <fieldset>
-          <legend>Shipping Address</legend>
-            <div class="shipping_name">
-              <label for="fname">First Name</label>
-              <input name="fname" required/>
-              <label for="lname">Last Name</label>
-              <input name="lname" required/>
-            </div>
-            <div class="shipping_address">
-              <label for="street">Street</label>
-              <input name="street" required/>
-              <label for="city">City</label>
-              <input name="city" required/>
-              <label for="state">State</label>
-              <input name="state" required/>
-              <label for="zip">Zip</label>
-              <input name="zip" type="number" id="zip" required/>
-            </div>
-          </fieldset>
+        <div id="address-fieldset"></div>
           <fieldset>
-            <legend>Shipping and Donation Payment</legend>
-            <label for="cardNumber">Card number</label>
-            <input
-              name="cardNumber"
-              type="number"
-              value="1234123412341234"
-              required
-            />
-            <label for="expiration">Expiration</label>
-            <input name="expiration" required/>
-            <label for="code">Security Code</label>
-            <input name="code" type="number" value="123" required/>
+          <legend>Donation</legend>
+          <div class="shipping_name">
+            <label for="fname">First Name</label>
+            <input name="fname" required/>
+            <label for="lname">Last Name</label>
+            <input name="lname" required/>
+          </div>
+          <label for="cardNumber">Card number</label>
+          <input
+            name="cardNumber"
+            type="number"
+            required
+          />
+          <label for="expiration">Expiration</label>
+          <input name="expiration" required/>
+          <label for="code">Security Code</label>
+          <input name="code" type="number" value="123" required/>
           </fieldset>
           <fieldset class="checkout-summary">
             <legend>Summary</legend>
-              <label for="shipping">Shipping and Donation Cost</label>
-              <p id="shipping">Shipping Cost: $2.00</p>
+              <p id="shipping-cost"></p>
               <label for="donation">Donation is optional. All donations will be sent to the producers, writers, and actors in support of their upcoming projects.</label>
-              <input name="donation" type="number" min="0.01" value="0.00"/>
-              <label for="orderTotal">Order Total: <span name="order-total">total here...</span></label>
-              <p id="order-total"></p>
+              <input id="donation" name="donation" type="number" min="0.00" value="0.00"/>
+              <button id="amount-button" type="button">Add Donate Amount</button>
+              <label>Order Total: <span id="order-total"></span></label>
           </fieldset>
           <button id="donate-submit" type="submit">Donate</button>
         </form>
     </main>
     <footer class="main-footer"></footer>
     <script src="scripts/headerfooter.js" type="module"></script>
+    <script src="scripts/movieDonation.js" type="module"></script>
+    <script src="scripts/movieForm.js" type="module"></script>
   </body>
 </html>

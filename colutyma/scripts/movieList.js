@@ -1,4 +1,4 @@
-import { fetchMovies } from "./getdata.js"
+import { fetchMovies } from "./getdata.js";
 
 const filmList = document.querySelector("#film-list");
 const movies = await fetchMovies();
@@ -22,7 +22,6 @@ async function movieListTemplate() {
             <button type="button" class="synopsis-button"></button>
             <p>${movie.synopsis}</p>
           </div>
-          <a href="#">Get</a>
         </div>
         `;
     });

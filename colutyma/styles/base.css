@@ -43,3 +43,7 @@ body {
 .open p {
 	display: block;
 }
+
+#donate-submit {
+    display: none;
+}
