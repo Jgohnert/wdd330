@@ -1,5 +1,6 @@
 import { getLocalStorage, setLocalStorage} from "./getdata.js";
 
+// Saves the shipping details to local storage
 function saveShippingDetails(filmId, shippingDetails, total) {
     const shippingInfo = {
         movieTitle: filmId,
@@ -15,6 +16,7 @@ function saveShippingDetails(filmId, shippingDetails, total) {
     setLocalStorage("shipping-info", savedShippingInfo);
 }
 
+// Saves the donation details to local storage
 function saveDonationDetails(userDonation, userDetails) {
     const donationInfo = {
         userInfo: userDetails,
@@ -26,19 +28,18 @@ function saveDonationDetails(userDonation, userDetails) {
     setLocalStorage("donation-info", savedDonationInfo);
 }
 
+// submits the shipping details
 export function submitShippingDetails(movie, shippingAmount) {
     const movieForm = document.querySelector("#movie-form");
 
     movieForm.addEventListener("submit", () => {
-
-        console.log('Submit button clicked');
 
         const movieTitle = movie.title;
         const userDonation = parseFloat(document.querySelector("[name='donation']").value);
         const shippingCost = shippingAmount;
         const totalCost = (userDonation + shippingCost).toFixed(2);
         
-        // Get shipping details from form
+        // Get shipping details from the form
         const shippingDetails = {
             firstName: document.querySelector("[name='fname']").value,
             lastName: document.querySelector("[name='lname']").value,
@@ -52,19 +53,14 @@ export function submitShippingDetails(movie, shippingAmount) {
         saveShippingDetails(movieTitle, shippingDetails, totalCost);
         
         alert("Shipping and cost information saved successfully!");
-
-        // You could also trigger donation details here if needed
-        submitDonationDetails(); 
     });
 }
 
+// submits the donation details
 export function submitDonationDetails() {
     const movieForm = document.querySelector("#movie-form");
 
-    // Same form submit listener
     movieForm.addEventListener("submit", () => {
-
-        console.log('Submit button clicked for donation');
 
         const userDonation = parseFloat(document.querySelector("[name='donation']").value);
 
@@ -73,7 +69,6 @@ export function submitDonationDetails() {
             lastName: document.querySelector("[name='lname']").value,
         }
 
-        // Save the user donation to localStorage
         saveDonationDetails(userDonation, userDetails);
         
         alert("Donation has been saved successfully!");
