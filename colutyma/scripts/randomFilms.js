@@ -7,7 +7,10 @@ function movieTemplate(movies) {
         let template = `
         <section>
           <a href="film-info.html?title=${movie.title}">
-            <img src="${movie.poster}" alt="image of ${movie.title} poster">
+            <picture>
+              <source srcset="${movie.poster_small}" media="(max-width: 600px)">
+              <img src="${movie.poster}" alt="image of ${movie.title} poster">
+            </picture>
             <h3>${movie.title}<h3>
           </a>
         </section>

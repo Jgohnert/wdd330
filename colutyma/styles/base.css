@@ -2,23 +2,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --primary-color: #143d8f;
+    --primary-color: #0b1e44;
     --secondary-color: #000f1b;
     --accent-color1: #e0f2e9;
     --accent-color2: #fa834c;
     --accent-color3: #823038;
-    --border: solid 2px var(--accent-color3);
+    --border-radius: 4px;
+    --border: outset 4px var(--primary-color);
+    --animation: borderMovement 5s linear infinite;
+    --header-margins: 100px 0px 60px 0px;
     --main-font: "Host Grotesk", Courier, monospace;
     --secondary-font: "Audiowide", "Host Grotesk", Courier;
 }
 
-h1, h2, h3 {
+body {
+    background-color: var(--secondary-color);
+    font-family: var(--main-font);
+    color: var(--accent-color1);
+}
+
+main {
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
     font-family: var(--secondary-font);
 }
 
-body {
-    font-family: var(--main-font);
+h1 {
+    margin: var(--header-margins);
 }
+
+h2 {
+    margin: var(--header-margins);
+}
+
+@keyframes borderMovement {
+    0% {
+        box-shadow: 0px 0px 0px 2px var(--accent-color2), 0px 0px 0px 4px var(--accent-color1);
+    }
+    50% {
+        box-shadow: 0px 0px 0px 2px var(--accent-color1), 0px 0px 0px 4px var(--primary-color);
+    }
+    100% {
+        box-shadow: 0px 0px 0px 2px var(--accent-color2), 0px 0px 0px 4px var(--accent-color1);
+    }
+}
+
+/* Header */
+
+.main-header {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr;
+}
+
+#col-logo {
+    width: 100%;
+    grid-column: 1/3;
+}
+
+.search-bar {
+    grid-row: 2;
+    grid-column: 2;
+    padding: 20px;
+}
+
+/* Menu */
+
+#menu {
+	font-size: 2rem;
+	border: 0;
+	background: var(--primary-color);
+ 	position: absolute;
+	left: 0rem;
+    margin-top: 39.5%;
+}
+
+#menu::before {
+    color: #000000;
+    content: "☰";
+}
+
+#menu.open::before {
+	content: "✖";
+    color: #000000;
+}
+
+.navigation {
+    grid-row: 3;
+    grid-column: 1/3;
+	display: flex;
+	flex-direction: row;
+    font-size: 14px;
+}
+
+.navigation.open {
+    animation: var(--animation);
+}
+
+.navigation a {
+	display: none;
+    width: 100%;
+	padding: 1rem 0rem;
+	text-align: center;
+	text-decoration: none;
+    background: var(--accent-color1);
+    color: var(--accent-color3);
+    font-family: var(--secondary-font);
+}
+
+.navigation a:hover {
+	background: var(--accent-color3);
+    color: var(--accent-color1);
+    font-weight: 800;
+}
+
+.open a {
+	display: block;
+}
+
+/* index.html */
+
+.page-description {
+    margin: 0% 5%;
+}
+
+.col-info {
+    background-color: var(--primary-color);
+    padding: 5%;
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
+
+/* .col-info a {
+    
+} */
+
+#donate-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--accent-color1);
+    color: var(--accent-color3);
+    font-family: var(--secondary-font);
+    padding: 10px;
+    margin: 20px;
+    border-radius: var(--border-radius);
+    animation: var(--animation);
+}
+
+#donate-link:hover {
+    background: var(--accent-color3);
+    color: var(--accent-color1);
+    font-weight: 800;
+}
+
+
+/* movie-list.html */
 
 .synopsis-button {
     background: none;
@@ -43,6 +185,8 @@ body {
 .open p {
 	display: block;
 }
+
+/* donations.html */
 
 #donate-submit {
     display: none;

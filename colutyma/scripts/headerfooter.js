@@ -1,3 +1,5 @@
+import { loadMenuEvent } from "./menu.js"
+
 async function renderWithTemplate(template, parentElement, data, callback, position = "afterbegin", clear = true) {
     if (clear) {
   
@@ -25,7 +27,8 @@ function loadHeaderFooter() {
     const footerTemplate = loadTemplate("data/partials/footer.html");
     const parentHeader = document.querySelector(".main-header");
     const parentFooter = document.querySelector(".main-footer");
-    renderWithTemplate(headerTemplate, parentHeader);
+
+    renderWithTemplate(headerTemplate, parentHeader, null, loadMenuEvent); 
     renderWithTemplate(footerTemplate, parentFooter);
 }
 
