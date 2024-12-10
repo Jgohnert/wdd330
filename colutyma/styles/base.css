@@ -137,10 +137,6 @@ h2 {
     border: var(--border);
 }
 
-/* .col-info a {
-    
-} */
-
 #donate-link {
     display: inline-block;
     text-decoration: none;
@@ -159,6 +155,20 @@ h2 {
     font-weight: 800;
 }
 
+.featured-films img {
+    padding: 5%;
+    margin: 5% 5%;
+    background-color: var(--primary-color);
+}
+
+.featured-films h3 {
+    margin: 0%;
+    margin-bottom: 20%;
+}
+
+.featured-films a {
+    text-decoration: none;
+}
 
 /* movie-list.html */
 

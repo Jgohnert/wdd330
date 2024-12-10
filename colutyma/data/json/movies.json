@@ -1,7 +1,7 @@
 {
     "movies": [
         {
-            "title": "Hunt",
+            "title": "HUNT",
             "poster": "data/images/hunt.webp",
             "poster_small": "data/images/hunt-small.webp",
             "genre": "Actoin, Mystery, Monster",
@@ -30,7 +30,7 @@
             ]
         },
         {
-            "title": "Celerity",
+            "title": "CELERITY",
             "poster": "data/images/celerity.webp",
             "poster_small": "data/images/celerity-small.webp",
             "genre": "Action, Adventure Superhero",
@@ -71,7 +71,7 @@
             ]
         },
         {
-            "title": "Bro's",
+            "title": "BRO'S",
             "poster": "data/images/bros.webp",
             "poster_small": "data/images/bros-small.webp",
             "genre": "Comedy, Roadtrip, Christmas",
@@ -123,7 +123,7 @@
             ]
         },
         {
-            "title": "Initiative",
+            "title": "INITIATIVE",
             "poster": "data/images/initiative.webp",
             "poster_small": "data/images/initiative-small.webp",
             "genre": "Action, Military",
@@ -158,7 +158,7 @@
             ]
         },
         {
-            "title": "Ben Jack and Classified",
+            "title": "BEN JACK AND CLASSIFIED",
             "poster": "data/images/movie-poster-placeholder.webp",
             "poster_small": "data/images/movie-poster-placeholder-small.webp",
             "genre": "Comedy",
@@ -187,7 +187,7 @@
             ]
         },
         {
-            "title": "Ben Jack and Classified 2",
+            "title": "BEN JACK AND CLASSIFIED 2",
             "poster": "data/images/bjc2.webp",
             "poster_small": "data/images/bjc2-small.webp",
             "genre": "Action, Comedy",
@@ -216,7 +216,7 @@
             ]
         },
         {
-            "title": "Ben Jack and Classified 3",
+            "title": "BEN JACK AND CLASSIFIED 3",
             "poster": "data/images/movie-poster-placeholder.webp",
             "poster_small": "data/images/movie-poster-placeholder-small.webp",
             "genre": "Action, Comedy, Adventure",
