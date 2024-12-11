@@ -68,7 +68,6 @@ export function renderRandomReviews(reviews) {
 
     // Render existing reviews
     reviews.forEach(review => {
-        const userReviews = document.createElement("div");
     
         // Generate the star rating with stars
         const rating = review.rating;
@@ -78,17 +77,19 @@ export function renderRandomReviews(reviews) {
         // Create the star rating display
         const stars = "★".repeat(fullStars) + "☆".repeat(emptyStars);
     
-        userReviews.innerHTML = `
+        reviewList.innerHTML += `
           <div>
-            <strong>${review.movie}</strong>
-            <p>${review.user}</p>
-            <p>${review.text}</p>
-            <p class="star-rating">${stars}</p>
+            <h4>${review.movie}</h4>
+            <div class="user-review">
+              <p>${review.user}</p>
+              <p class="star-rating">${stars}</p>
+              <p>${review.text}</p>
+            </div>
           </div>
+          <hr>
         `;
-        
-        reviewList.appendChild(userReviews);
       });
+    return reviewList;
 }
 
 // This renders all of the featured reviews of a specific 

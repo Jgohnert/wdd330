@@ -5,7 +5,7 @@ const featuredFilms = document.querySelector("#featured-films")
 function movieTemplate(movies) {
     movies.forEach((movie) => {
         let template = `
-        <section class="featured-films">
+        <section class="random-film-card">
           <a href="film-info.html?title=${movie.title}">
             <picture>
               <source srcset="${movie.poster_small}" media="(max-width: 600px)">

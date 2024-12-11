@@ -1,0 +1,96 @@
+@media (min-width: 901px) {
+    
+    h1, h2, h3 {
+        margin: var(--header-margins-wide);
+    }
+    
+    /* Header */
+
+    .main-header {
+        grid-template-columns: 3fr 1fr;
+    }
+    
+    #col-logo {
+        width: 40%;
+        margin-bottom: 5%;
+    }
+    
+    .search-bar {
+        grid-column: 2;
+        grid-row: 2;
+        margin: 0% auto;
+        padding: 3% 5%;
+    }
+
+    /* Menu */
+
+    .navigation {
+        grid-column: 1;
+        grid-row: 2;
+        border-radius: var(--border-radius);
+        
+    }
+
+    .navigation a {
+        padding: 2%;
+    }
+
+    /* Footer */
+
+    .main-footer div {
+        margin: 2%;
+        align-content: end;
+    }
+    
+    .main-footer {
+        padding: 5%;
+        margin-top: 250px;
+        font-size: 16px;
+    }
+
+    .contact h5{
+        margin-bottom: 30%;
+    }
+
+    .main-footer .wide-hr {
+        margin: 0%;
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+
+    .social-media img{
+        margin: 2%;
+        border-radius: 100px;
+        width: 80px;
+    }
+
+    .about-tmdb {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+
+    .copyright {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    /* index.html */
+
+    #featured-films {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .random-film-card {
+        padding: 2%;
+        margin: 2%;
+    }
+
+    #review-list {
+        font-size: 20px;
+    }
+
+    .wide-hr {
+        margin: 5%;
+    }
+}

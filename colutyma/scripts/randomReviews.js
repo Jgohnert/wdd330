@@ -42,15 +42,23 @@ export function displayFeaturedReviews(filmId) {
     } else {
         featuredReviews.innerHTML = `
         <div>
-          <strong>Anonymous</strong>
-          <p>Recently watched 2056, and wow! it's an incredible thriller with so many hidden meanings behind the subtle plot and amazing acting.<p>
-          <p>★★★★★<p>
+          <h4>2056</h4>
+          <div class="user-review">
+            <p>Anonymous<p>
+            <p class="star-rating">★★★★★<p>
+            <p>Recently watched 2056, and wow! it's an incredible thriller with so many hidden meanings behind the subtle plot and amazing acting.<p>
+          </div>
         </div>
+        <hr>
         <div>
-          <p>Anonymous<p>
-          <p>Celerity is one of my all time favorites. This new version is much less depressing than the original cut.<p>
-          <p>★★★★☆<p>
+          <h4>CELERITY</h4>
+          <div class="user-review">
+            <p>Anonymous<p>
+            <p class="star-rating">★★★★☆<p>
+            <p>Celerity is one of my all time favorites. This new version is much less depressing than the original cut.<p>
+          </div>
         </div>
+        <hr>
         `;
     }
 }
