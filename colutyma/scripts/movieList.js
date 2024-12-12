@@ -9,18 +9,26 @@ async function movieListTemplate() {
 
     movies.forEach((movie) => {
         template += `
-        <div>
-          <a href="film-info.html?title=${movie.title}">
-            <h2>${movie.title}</h2>
-            <img src="${movie.poster}" alt="image of ${movie.title} poster">
-          </a>
-          <p>${movie.rating}</p>
-          <p>Genre: ${movie.genre}</p>
-          <p>Year ${movie.year}<p>
-          <p>Synopsis</p>
-          <div class="synopsis">
-            <button type="button" class="synopsis-button"></button>
-            <p>${movie.synopsis}</p>
+        <div class="movie-card">
+          <div class="movie-link">
+            <a href="film-info.html?title=${movie.title}">
+              <h2>${movie.title}</h2>
+              <picture>
+                <source srcset="${movie.poster_small}" media="(max-width: 600px)">
+                <img src="${movie.poster}" alt="image of ${movie.title} poster">
+              </picture>
+            </a>
+          </div>
+          <hr class="movie-list-hr">
+          <p class="star-rating">${movie.rating}</p>
+          <p class="card-genre">Genre: ${movie.genre}</p>
+          <p class="card-year">Year: ${movie.year}<p>
+          <div class="synopsis-grid">
+            <p class="title-synopsis">Synopsis</p>
+            <div class="synopsis">
+              <button type="button" class="synopsis-button"></button>
+            </div>
+            <p class="synopsis-text">${movie.synopsis}</p>
           </div>
         </div>
         `;
@@ -82,14 +90,23 @@ async function sortMovieList() {
 // Expands some of the info of each movie on the movie list page.
 export function expandInfo() {
   const synopsisButtons = document.querySelectorAll(".synopsis-button");
-    const synopses = document.querySelectorAll(".synopsis");
+  const synopsisTexts = document.querySelectorAll(".synopsis-text");
 
-    synopsisButtons.forEach((synopsisButton, index) => {
-        synopsisButton.addEventListener("click", () => {
-            synopses[index].classList.toggle("open");
-            synopsisButton.classList.toggle("open");
-        });
+  synopsisButtons.forEach((synopsisButton, index) => {
+    synopsisButton.addEventListener("click", () => {
+      synopsisButton.classList.toggle("open");
+      synopsisTexts[index].classList.toggle("open");
     });
-}
+  });
+
+  synopsisTexts.forEach((synopsisText, synopsisButton) => {
+    if (synopsisTexts && synopsisButton === "open") {
+      document.addEventListener("click", () => {
+        synopsisText.style.display = "none"
+      });
+    }
+    }
+)};
+  
 
 displayMovieList();

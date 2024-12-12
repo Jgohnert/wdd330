@@ -62,6 +62,7 @@ hr {
 /* Header */
 
 .main-header {
+    animation: var(--animation);
     background-color: var(--primary-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -146,6 +147,7 @@ hr {
 /* Footer */
 
 .main-footer {
+    animation: var(--animation);
     background-image: linear-gradient(var(--primary-color), var(--accent-color3), var(--primary-color));
     margin-top: 150px;
     padding: 5% 10%;
@@ -167,6 +169,7 @@ div.contact {
 
 .social-media img {
     padding: 10px;
+    width: 50px;
     margin: 5px;
     background-color: var(--accent-color1);
     border-radius: 50px;
@@ -266,19 +269,93 @@ div.contact {
 
 /* movie-list.html */
 
+.page-sort {
+    margin-top: 20%;
+}
+
+.sort-by button {
+    margin: 2%;
+    padding: 8px;
+    width: 80px;
+    font-size: 14px;
+    font-family: var(--secondary-font);
+    background-color: var(--accent-color1);
+    border-radius: var(--border-radius);
+    animation: var(--animation);
+}
+
+.movie-card {
+    border: var(--border);
+    padding: 8%;
+    margin: 10% 15%;
+    text-align: left;
+}
+
+.movie-card h2 {
+    font-size: 18px;
+    text-align: center;
+    margin: 2% 0%;
+    padding: 2%;
+    border-radius: var(--border-radius);
+    color: var(--accent-color3);
+    background-color: var(--accent-color1);
+}
+
+.movie-link {
+    padding: 6%;
+}
+
+.movie-link:hover {
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: var(--accent-color3);
+    animation: var(--animation);
+}
+
+.movie-list-hr {
+    margin: 0%;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+}
+
+.movie-card a {
+    text-decoration: none;
+}
+
+.movie-card img {
+    background-color: var(--accent-color3);
+}
+
+.movie-card img {
+    width: 100%;
+}
+
+.synopsis-grid {
+    display: grid;
+    grid-template-columns: 0.4fr auto; 
+    grid-template-rows: auto auto;
+}
+
+.title-synopsis {
+    grid-column: 1; 
+    align-self: center;
+}
+
+.synopsis {
+    grid-column: 2;
+    display: flex;
+}
+
 .synopsis-button {
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.synopsis p {
-    display: none;
-}
-
 .synopsis-button::before {
     content: "❭";
-    
+    font-size: 22px;
+    color: var(--accent-color1);
 }
 
 .synopsis-button.open {
@@ -286,8 +363,21 @@ div.contact {
     transition: transform 0.2s ease;
 }
 
-.open p {
-	display: block;
+.synopsis-text {
+    grid-column: 1/3;
+    display: none;
+}
+
+.synopsis-text.open {
+    display: block;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    padding: 5%;
+    margin-top: 15%;
+    border-radius: var(--border-radius);
+    border: var(--border);
+    background-color: var(--primary-color);
 }
 
 /* donations.html */

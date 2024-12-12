@@ -11,7 +11,7 @@
     }
     
     #col-logo {
-        width: 40%;
+        width: 30%;
         margin-bottom: 5%;
     }
     
@@ -75,6 +75,14 @@
     }
 
     /* index.html */
+
+    .col-info p {
+        margin: 2% 10%;
+    }
+
+    .page-description {
+        margin: auto 15%;
+    }
 
     #featured-films {
         display: flex;
