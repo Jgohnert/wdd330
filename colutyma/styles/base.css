@@ -11,7 +11,7 @@
     --border: outset 2px var(--secondary-color);
     --animation: borderMovement 5s linear infinite;
     --header-margins: 100px 0px 60px 0px;
-    --header-margins-wide: 250px 0px 60px 0px;
+    --header-margins-wide: 150px 0px 10px 0px;
     --main-font: "Host Grotesk", Courier, monospace;
     --secondary-font: "Audiowide", "Host Grotesk", Courier;
 }
@@ -228,21 +228,22 @@ div.contact {
 }
 
 .random-film-card:hover {
-    background-color: #823038;
+    background-color: var(--accent-color3);
     animation: var(--animation);
     border: solid 2px var(--accent-color3);
 }
 
 #featured-films img {
+    border-radius: var(--border-radius);
     width: 100%;
 }
 
 #featured-films h3 {
-    margin: 2%;
-    background-color: #e0f2e9;
-    color: #823038;
+    padding: 2%;
+    margin: 2% 0%;
+    background-color: var(--accent-color1);
+    color: var(--accent-color3);
     border-radius: var(--border-radius);
-
 }
 
 #featured-films a {
@@ -279,16 +280,22 @@ div.contact {
     width: 80px;
     font-size: 14px;
     font-family: var(--secondary-font);
+    border: none;
     background-color: var(--accent-color1);
     border-radius: var(--border-radius);
     animation: var(--animation);
 }
 
+.sort-by button:hover {
+    background-color: var(--accent-color3);
+    color: var(--accent-color1);
+}
+
 .movie-card {
-    border: var(--border);
     padding: 8%;
     margin: 10% 15%;
     text-align: left;
+    font-size: 14px;
 }
 
 .movie-card h2 {
@@ -302,6 +309,7 @@ div.contact {
 }
 
 .movie-link {
+    border: var(--border);
     padding: 6%;
 }
 
@@ -323,6 +331,7 @@ div.contact {
 }
 
 .movie-card img {
+    border-radius: var(--border-radius);
     background-color: var(--accent-color3);
 }
 
@@ -332,18 +341,17 @@ div.contact {
 
 .synopsis-grid {
     display: grid;
-    grid-template-columns: 0.4fr auto; 
+    grid-template-columns: 0.2fr auto; 
     grid-template-rows: auto auto;
 }
 
 .title-synopsis {
     grid-column: 1; 
-    align-self: center;
+    margin: 3px;
 }
 
 .synopsis {
     grid-column: 2;
-    display: flex;
 }
 
 .synopsis-button {
@@ -374,7 +382,7 @@ div.contact {
     left: 5%;
     right: 5%;
     padding: 5%;
-    margin-top: 15%;
+    margin-top: 10%;
     border-radius: var(--border-radius);
     border: var(--border);
     background-color: var(--primary-color);

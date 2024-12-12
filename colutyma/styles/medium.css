@@ -115,4 +115,25 @@
         margin: 2%;
     }
 
+    /* movie-list.html */
+
+    .page-sort {
+        margin-top: 10%;
+    }
+
+    #film-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .movie-card {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .synopsis-text.open {
+        position: relative;
+        margin: 0%;
+    }
+
 }

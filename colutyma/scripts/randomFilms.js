@@ -7,11 +7,11 @@ function movieTemplate(movies) {
         let template = `
         <section class="random-film-card">
           <a href="film-info.html?title=${movie.title}">
+            <h3>${movie.title}</h3>
             <picture>
               <source srcset="${movie.poster_small}" media="(max-width: 600px)">
               <img src="${movie.poster}" alt="image of ${movie.title} poster">
             </picture>
-            <h3>${movie.title}<h3>
           </a>
         </section>
         `;

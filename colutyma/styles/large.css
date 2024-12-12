@@ -101,4 +101,10 @@
     .wide-hr {
         margin: 5%;
     }
+
+    /* movie-list.html */
+
+    .sort-by button {
+        margin: 1%;
+    }
 }

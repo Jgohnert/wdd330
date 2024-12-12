@@ -22,13 +22,13 @@ async function movieListTemplate() {
           <hr class="movie-list-hr">
           <p class="star-rating">${movie.rating}</p>
           <p class="card-genre">Genre: ${movie.genre}</p>
-          <p class="card-year">Year: ${movie.year}<p>
+          <p class="card-year">Year: ${movie.year}</p>
           <div class="synopsis-grid">
             <p class="title-synopsis">Synopsis</p>
             <div class="synopsis">
               <button type="button" class="synopsis-button"></button>
             </div>
-            <p class="synopsis-text">${movie.synopsis}</p>
+            <p class="synopsis-text">${movie.title} <br><br> ${movie.synopsis}</p>
           </div>
         </div>
         `;
