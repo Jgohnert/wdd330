@@ -9,24 +9,24 @@ export function renderReviewSection(filmId) {
 
         reviewSection.innerHTML = `
           <h3>REVIEWS</h3>
-          <ul id="review-list"></ul>
-          <h4>Add New Review</h4>
           <form id="review-form">
-            <textarea id="review-input" placeholder="Leave your review here..." required></textarea>
-            <div id="stars">
-              <label for="onestar"></label>
+            <h4>LEAVE A REVIEW</h4>
+            <textarea id="review-input" placeholder="Leave your review of the movie here..." required></textarea>
+            <div class="stars">
               <input type="radio" id="onestar" name="stars" value="1" required>
-              <label for="twostar"></label>
-              <input type="radio" id="twostar" name="stars" value="2" required>
-              <label for="threestar"></label>
-              <input type="radio" id="threestar" name="stars" value="3" required>
-              <label for="fourstar"></label>
-              <input type="radio" id="fourstar" name="stars" value="4" required>
-              <label for="fivestar"></label>
-              <input type="radio" id="fivestar" name="stars" value="5" required>
-            </div>  
-            <button type="submit">Submit</button>
+              <label for="onestar" class="star-label"></label>
+              <input type="radio" id="twostar" name="stars" value="2">
+              <label for="twostar" class="star-label"></label>
+              <input type="radio" id="threestar" name="stars" value="3">
+              <label for="threestar" class="star-label"></label>
+              <input type="radio" id="fourstar" name="stars" value="4">
+              <label for="fourstar" class="star-label"></label>
+              <input type="radio" id="fivestar" name="stars" value="5">
+              <label for="fivestar" class="star-label"></label>
+              </div>
+            <button type="submit">POST</button>
           </form>
+          <ul id="review-list"></ul>
         `;
       
     renderReviews(filmId);
@@ -78,11 +78,10 @@ export function renderRandomReviews(reviews) {
         const stars = "★".repeat(fullStars) + "☆".repeat(emptyStars);
     
         reviewList.innerHTML += `
-          <div>
+          <div class="user-review-list">
             <h4>${review.movie}</h4>
             <div class="user-review">
-              <p>${review.user}</p>
-              <p class="star-rating">${stars}</p>
+              <p>${review.user} <span class="star-rating">${stars}</span></p>
               <p>${review.text}</p>
             </div>
           </div>

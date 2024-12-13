@@ -73,8 +73,11 @@ async function displayRelatedFilms(movie) {
         // Render the related films on the page
         relatedFilms.innerHTML = randomFilms.map(movie => `
             <div class="related-film">
-                <img src="https://image.tmdb.org/t/p/w200${movie.poster_path}" alt="${movie.title}">
-                <h4>${movie.title}</h4>
+                <picture>
+                    <source srcset="https://image.tmdb.org/t/p/w200${movie.poster_path}" alt="${movie.title}" media="(max-width: 601px)" width="100">
+                    <img src="https://image.tmdb.org/t/p/w200${movie.poster_path}" alt="${movie.title}">
+                </picture>
+                <h4>${(movie.title).toUpperCase()}</h4>
             </div>
         `).join("");
     }

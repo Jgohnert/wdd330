@@ -5,7 +5,7 @@ const addToShippingDiv = document.querySelector("#add-to-shipping");
 // displays the button to get a movie on the movie-info.html page
 function getMoviebutton(movie) {
     let template = `
-        <a href="donations.html?title=${movie.title}" id="get-movie-link">Get Movie</a>
+        <a href="donations.html?title=${movie.title}" id="get-movie-link">GET MOVIE</a>
     `;
     addToShippingDiv.innerHTML = template;
 }

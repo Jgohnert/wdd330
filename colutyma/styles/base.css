@@ -388,6 +388,141 @@ div.contact {
     background-color: var(--primary-color);
 }
 
+/* movie-info.html */
+
+#movie-img-card img {
+    border-radius: var(--border-radius);
+    border: var(--border);
+    padding: 10%;
+}
+
+.Movie-info {
+    margin: auto 12%;
+}
+
+.about-movie {
+    font-size: 14px;
+    text-align: left;
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+#all-characters {
+    margin: 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#all-characters .synopsis-grid {
+    grid-template-columns: auto 1fr; 
+}
+
+#all-characters h3 {
+    text-align: left;
+    font-size: 14px;
+}
+
+.character-card {
+    margin: 5% 30%;
+}
+
+.character-card img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
+
+.rel-div h3 {
+    margin-bottom: 0%;
+
+}
+
+#related-films {
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#related-films h4 {
+    font-size: 14px;
+}
+
+#related-films img {
+    border-radius: var(--border-radius);
+}
+
+#add-to-shipping {
+    margin-top: 20%;
+}
+
+#get-movie-link {
+    font-family: var(--secondary-font);
+    text-decoration: none;
+    padding: 5%;
+    color: var(--accent-color3);
+    border-radius: var(--border-radius);
+    animation: var(--animation);
+    background-color: var(--accent-color1);
+}
+
+#get-movie-link:hover {
+    background-color: var(--accent-color3);
+    color: var(--accent-color1);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.star-label {
+  font-size: 40px;
+  cursor: pointer;
+  margin: 1%;
+}
+
+.star-label::before {
+  content: "★";
+  color: var(--accent-color1);
+}
+
+input[type="radio"]:checked + .star-label::before {
+  color: var(--accent-color2);
+}
+
+.star-label:hover::before {
+  color: var(--accent-color2);
+}
+
+#review-form {
+    border-top: var(--border);
+    border-bottom: var(--border);
+    margin: auto 10%;
+    padding: 5%;
+}
+
+#review-form button {
+    font-family: var(--secondary-font);
+    margin-top: 10%;
+    padding: 2% 5%;
+    border: none;
+    border-radius: var(--border-radius);
+    animation: var(--animation);
+    background-color: var(--accent-color1);
+}
+
+.user-review-list {
+    margin: 0%;
+    text-align: left;
+}
+
+.user-review-list h4 {
+    font-size: 14px;
+}
+
+#user-reviews #review-list {
+    padding: 0%;
+}
+
 /* donations.html */
 
 #donate-submit {
