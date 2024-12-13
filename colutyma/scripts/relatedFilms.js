@@ -75,7 +75,7 @@ async function displayRelatedFilms(movie) {
             <div class="related-film">
                 <picture>
                     <source srcset="https://image.tmdb.org/t/p/w200${movie.poster_path}" alt="${movie.title}" media="(max-width: 601px)" width="100">
-                    <img src="https://image.tmdb.org/t/p/w200${movie.poster_path}" alt="${movie.title}">
+                    <img src="https://image.tmdb.org/t/p/w200${movie.poster_path}" alt="${movie.title}" width="180">
                 </picture>
                 <h4>${(movie.title).toUpperCase()}</h4>
             </div>

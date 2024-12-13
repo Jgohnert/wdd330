@@ -13,15 +13,16 @@ export function renderReviewSection(filmId) {
             <h4>LEAVE A REVIEW</h4>
             <textarea id="review-input" placeholder="Leave your review of the movie here..." required></textarea>
             <div class="stars">
-              <input type="radio" id="onestar" name="stars" value="1" required>
+              <strong>Rate this movie to post:</strong>
+              <input type="radio" id="onestar" name="star" value="1" required>
               <label for="onestar" class="star-label"></label>
-              <input type="radio" id="twostar" name="stars" value="2">
+              <input type="radio" id="twostar" name="star" value="2">
               <label for="twostar" class="star-label"></label>
-              <input type="radio" id="threestar" name="stars" value="3">
+              <input type="radio" id="threestar" name="star" value="3">
               <label for="threestar" class="star-label"></label>
-              <input type="radio" id="fourstar" name="stars" value="4">
+              <input type="radio" id="fourstar" name="star" value="4">
               <label for="fourstar" class="star-label"></label>
-              <input type="radio" id="fivestar" name="stars" value="5">
+              <input type="radio" id="fivestar" name="star" value="5">
               <label for="fivestar" class="star-label"></label>
               </div>
             <button type="submit">POST</button>
@@ -42,7 +43,7 @@ function setReviewValues(filmId) {
         event.preventDefault();
         
         const reviewInput = document.querySelector("#review-input");
-        const userRating = document.querySelector("input[name='stars']:checked"); 
+        const userRating = document.querySelector("input[name='star']:checked"); 
     
         const newReview = reviewInput.value.trim();
 
@@ -78,9 +79,9 @@ export function renderRandomReviews(reviews) {
         const stars = "★".repeat(fullStars) + "☆".repeat(emptyStars);
     
         reviewList.innerHTML += `
-          <div class="user-review-list">
+          <div id="user-review-list">
             <h4>${review.movie}</h4>
-            <div class="user-review">
+            <div id="user-review">
               <p>${review.user} <span class="star-rating">${stars}</span></p>
               <p>${review.text}</p>
             </div>

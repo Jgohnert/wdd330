@@ -39,6 +39,7 @@ function renderMovieDetails(movie) {
         const charPosterImg = document.createElement("img");
         charPosterImg.src = character.charPoster;
         charPosterImg.alt = character.name;
+        charPosterImg.style.width = "150px";
 
         const synopsisGrid = document.createElement("div");
         synopsisGrid.className = "synopsis-grid";

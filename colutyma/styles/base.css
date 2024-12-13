@@ -252,16 +252,13 @@ div.contact {
 }
 
 #review-list {
-    margin: 0%;
+    margin: 5%;
 }
 
-#review-list > div {
-    margin: 20%;
+#review-list div {
+    padding: 1%;
+    margin: 5% 20%;
     margin-bottom: 0%;
-}
-
-.user-review {
-    text-align: left;
 }
 
 .wide-hr {
@@ -410,7 +407,7 @@ div.contact {
 #all-characters {
     margin: 0%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 #all-characters .synopsis-grid {
@@ -423,7 +420,14 @@ div.contact {
 }
 
 .character-card {
-    margin: 5% 30%;
+    padding: 2%;
+    margin: 2% 15%;
+}
+
+.character-card .synopsis-grid {
+    padding: 2%;
+    border-bottom: var(--border);
+    margin: 2% 10%;
 }
 
 .character-card img {
@@ -470,14 +474,24 @@ div.contact {
     color: var(--accent-color1);
 }
 
+#review-input {
+    border-radius: var(--border-radius);
+    background-color: var(--accent-color1);
+    width: 100%;
+}
+
+.stars strong {
+    font-size: 20px;
+}
+
 input[type="radio"] {
     display: none;
 }
 
 .star-label {
-  font-size: 40px;
+  font-size: 20px;
   cursor: pointer;
-  margin: 1%;
+  margin: 0.5%;
 }
 
 .star-label::before {
@@ -501,6 +515,7 @@ input[type="radio"]:checked + .star-label::before {
 }
 
 #review-form button {
+    color: var(--accent-color3);
     font-family: var(--secondary-font);
     margin-top: 10%;
     padding: 2% 5%;
@@ -521,6 +536,24 @@ input[type="radio"]:checked + .star-label::before {
 
 #user-reviews #review-list {
     padding: 0%;
+}
+
+#user-reviews #user-review {
+    margin: 0%;
+}
+
+#user-reviews h4 {
+    display: none;
+}
+
+#user-reviews p {
+    text-align: left;
+}
+
+/* actorList */
+
+#actor-list {
+    margin: 5%;
 }
 
 /* donations.html */

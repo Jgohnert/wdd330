@@ -7,22 +7,22 @@
             "filmography": [
                 {
                     "movie": "Hunt",
-                    "poster": "data/images/hunt.webp",
+                    "poster": "data/images/hunt-small.webp",
                     "role": "Truck driver"
                 },
                 {
                     "movie": "Celerity",
-                    "poster": "data/images/celerity.webp",
+                    "poster": "data/images/celerity-small.webp",
                     "role": "Reilly Davis"
                 },
                 {
                     "movie": "Bro's",
-                    "poster": "data/images/bros.webp",
+                    "poster": "data/images/bros-small.webp",
                     "role": "Snoozin Tyler"
                 },
                 {
                     "movie": "2056",
-                    "poster": "data/images/2056.webp",
+                    "poster": "data/images/2056-small.webp",
                     "role": "The psycho, Blue Vest Survivor, Extras"
                 }
             ]
@@ -34,42 +34,42 @@
             "filmography": [
                 {
                     "movie": "Hunt",
-                    "poster": "data/images/hunt.webp",
+                    "poster": "data/images/hunt-small.webp",
                     "role": "Damian Porter, Yeti, S.W.A.T"
                 },
                 {
                     "movie": "Celerity",
-                    "poster": "data/images/celerity.webp",
+                    "poster": "data/images/celerity-small.webp",
                     "role": "Myles Melyne, Troop, civilian, Soldier, Detective"
                 },
                 {
                     "movie": "Bro's",
-                    "poster": "data/images/bros.webp",
+                    "poster": "data/images/bros-small.webp",
                     "role": "Seth, Police Officer, Coolio Luke"
                 },
                 {
                     "movie": "2056",
-                    "poster": "data/images/2056.webp",
+                    "poster": "data/images/2056-small.webp",
                     "role": "Blake"
                 },
                 {
                     "movie": "Initiative",
-                    "poster": "data/images/initiative.webp",
+                    "poster": "data/images/initiative-small.webp",
                     "role": "Brett Conway, Butros Moukib, Shades Guy, Terrorist Goon"
                 },
                 {
                     "movie": "Ben Jack and Classified",
-                    "poster": "data/images/movie-poster-placeholder.webp",
+                    "poster": "data/images/movie-poster-placeholder-small.webp",
                     "role": "Ben"
                 },
                 {
                     "movie": "Ben Jack and Classified 2",
-                    "poster": "data/images/bjc2.webp",
+                    "poster": "data/images/bjc2-small.webp",
                     "role": "Ben"
                 },
                 {
                     "movie": "Ben Jack and Classified 3",
-                    "poster": "data/images/movie-poster-placeholder.webp",
+                    "poster": "data/images/movie-poster-placeholder-small.webp",
                     "role": "Ben"
                 }
             ]
@@ -81,12 +81,12 @@
             "filmography": [
                 {
                     "movie": "Ben Jack and Classified",
-                    "poster": "data/images/movie-poster-placeholder.webp",
+                    "poster": "data/images/movie-poster-placeholder-small.webp",
                     "role": "Classified"
                 },
                 {
                     "movie": "Ben Jack and Classified 2",
-                    "poster": "data/images/bjc2.webp",
+                    "poster": "data/images/bjc2-small.webp",
                     "role": "Classified"
                 }
             ]
@@ -98,42 +98,42 @@
             "filmography": [
                 {
                     "movie": "Hunt",
-                    "poster": "data/images/hunt.webp",
+                    "poster": "data/images/hunt-small.webp",
                     "role": "Bently Mayer, Big Foot, Gunman, S.W.A.T"
                 },
                 {
                     "movie": "Celerity",
-                    "poster": "data/images/celerity.webp",
+                    "poster": "data/images/celerity-small.webp",
                     "role": "Atticus, Troop, civilian, Soldier, Detective"
                 },
                 {
                     "movie": "Bro's",
-                    "poster": "data/images/bros.webp",
+                    "poster": "data/images/bros-small.webp",
                     "role": "Anthony, Ghetto Matt"
                 },
                 {
                     "movie": "2056",
-                    "poster": "data/images/2056.webp",
+                    "poster": "data/images/2056-small.webp",
                     "role": "Goggles"
                 },
                 {
                     "movie": "Initiative",
-                    "poster": "data/images/initiative.webp",
+                    "poster": "data/images/initiative-small.webp",
                     "role": "Chase Landon, Clipboard Guy, Weapons Dealer, Terrorist Goon"
                 },
                 {
                     "movie": "Ben Jack and Classified",
-                    "poster": "data/images/movie-poster-placeholder.webp",
+                    "poster": "data/images/movie-poster-placeholder-small.webp",
                     "role": "Jack"
                 },
                 {
                     "movie": "Ben Jack and Classified 2",
-                    "poster": "data/images/bjc2.webp",
+                    "poster": "data/images/bjc2-small.webp",
                     "role": "Jack"
                 },
                 {
                     "movie": "Ben Jack and Classified 3",
-                    "poster": "data/images/movie-poster-placeholder.webp",
+                    "poster": "data/images/movie-poster-placeholder-small.webp",
                     "role": "Jack, Evil Jack"
                 }
             ]
@@ -145,27 +145,27 @@
             "filmography": [
                 {
                     "movie": "Hunt",
-                    "poster": "data/images/hunt.webp",
+                    "poster": "data/images/hunt-small.webp",
                     "role": "Leo, Gunman"
                 },
                 {
                     "movie": "Celerity",
-                    "poster": "data/images/celerity.webp",
+                    "poster": "data/images/celerity-small.webp",
                     "role": "General Mortimer, Troop, civilian"
                 },
                 {
                     "movie": "Bro's",
-                    "poster": "data/images/bros.webp",
+                    "poster": "data/images/bros-small.webp",
                     "role": "Eric, Sinister Sid"
                 },
                 {
                     "movie": "Initiative",
-                    "poster": "data/images/initiative.webp",
+                    "poster": "data/images/initiative-small.webp",
                     "role": "Ryker Brooks, Terrorist Goon"
                 },
                 {
                     "movie": "Ben Jack and Classified 2",
-                    "poster": "data/images/bjc2.webp",
+                    "poster": "data/images/bjc2-small.webp",
                     "role": "Classified 2"
                 }
             ]
@@ -177,22 +177,22 @@
             "filmography": [
                 {
                     "movie": "Hunt",
-                    "poster": "data/images/hunt.webp",
+                    "poster": "data/images/hunt-small.webp",
                     "role": "Jacob Anderson, S.W.A.T"
                 },
                 {
                     "movie": "Celerity",
-                    "poster": "data/images/celerity.webp",
+                    "poster": "data/images/celerity-small.webp",
                     "role": "Corbin Warner, Vome, Troop, Soldier"
                 },
                 {
                     "movie": "Bro's",
-                    "poster": "data/images/bros.webp",
+                    "poster": "data/images/bros-small.webp",
                     "role": "Josh, Rad Zach"
                 },
                 {
                     "movie": "Ben Jack and Classified 3",
-                    "poster": "data/images/movie-poster-placeholder.webp",
+                    "poster": "data/images/movie-poster-placeholder-small.webp",
                     "role": "Classified 3"
                 }
             ]
@@ -204,7 +204,7 @@
             "filmography": [
                 {
                     "movie": "Celerity",
-                    "poster": "data/images/celerity.webp",
+                    "poster": "data/images/celerity-small.webp",
                     "role": "Police Officer, Civilian"
                 }
             ]
@@ -216,17 +216,17 @@
             "filmography": [
                 {
                     "movie": "Celerity",
-                    "poster": "data/images/celerity.webp",
+                    "poster": "data/images/celerity-small.webp",
                     "role": "Soldier"
                 },
                 {
                     "movie": "Hunt",
-                    "poster": "data/images/hunt.webp",
+                    "poster": "data/images/hunt-small.webp",
                     "role": "Michael Heustine"
                 },
                 {
                     "movie": "Bros",
-                    "poster": "data/images/bros.webp",
+                    "poster": "data/images/bros-small.webp",
                     "role": "That Guy"
                 }
             ]
