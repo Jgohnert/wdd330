@@ -552,11 +552,154 @@ input[type="radio"]:checked + .star-label::before {
 
 /* actorList */
 
-#actor-list {
+.actor-card {
+    border-top: var(--border);
+    padding-top: 5%;
     margin: 5%;
 }
 
+.actor-div {
+    margin: 0% 30%;
+}
+
+.actor-div img {
+    border-radius: var(--border-radius);
+    width: 100%;
+    border: var(--border);
+}
+
+.actor-card h3 {
+    margin: 10% 0% 5% 0%;
+}
+
+.cred-div {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin-bottom: 25%;
+    padding: 5% 2%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    
+}
+
+.cred-div::-webkit-scrollbar {
+    height: 10px;
+}
+
+.cred-div::-webkit-scrollbar-track {
+    background:#0b1e445e;
+}
+
+.cred-div::-webkit-scrollbar-thumb {
+    background: #01070e;
+    border-radius: 100px;
+
+}
+
+.cred-div::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color2);
+
+}
+
+.cred-div::-webkit-scrollbar-corner {
+    background: #f1f1f1;
+  }
+
+.film-cred {
+    margin: 0% 5%;
+    font-size: 14px;
+    width: 150px;
+}
+
+.film-cred h4 {
+    background-color: var(--accent-color1);
+    color: var(--accent-color3);
+    border-radius: var(--border-radius);
+    margin: 0%;
+    padding: 1%;
+    width: 100%;
+}
+
+
+.film-cred img{
+    width: 150px;
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
+
 /* donations.html */
+
+.donation-h1 {
+    margin-top: 10%;
+}
+
+#movie-order {
+    margin: 5% 30% 0% 30%;
+}
+
+#movie-order img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
+
+#movie-form fieldset {
+    margin: 5%;
+    padding: 5% 10%;
+    border: var(--border);
+}
+
+#movie-form input,
+.order-summary #donation {
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin-bottom: 8%;
+    background-color: var(--accent-color1);
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
+
+.order-summary {
+    text-align: left;
+    padding: 0%;
+}
+
+.order-summary input {
+    margin-top: 5%;
+}
+
+#amount-button {
+    width: 103%;
+    height: 50px;
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    font-family: var(--secondary-font);
+    color: var(--accent-color3);
+    border: none;
+    background-color: var(--accent-color1);
+    border-radius: var(--border-radius);
+    animation: var(--animation);
+}
+
+#donate-submit {
+    width: 50%;
+    height: 50px;
+    margin: 5% 25% 20% 25%;
+    font-family: var(--secondary-font);
+    color: var(--accent-color3);
+    border: none;
+    background-color: var(--accent-color1);
+    border-radius: var(--border-radius);
+    animation: var(--animation);
+}
+
+#amount-button:hover {
+    background-color: var(--accent-color3);
+    color: var(--accent-color1);
+}
 
 #donate-submit {
     display: none;

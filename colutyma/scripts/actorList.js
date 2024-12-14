@@ -12,23 +12,27 @@ async function actorListTemplate() {
     let actorCard = `
       <div class="actor-card">
         <div class="actor-div">
-          <h3>${actor.name}</h3>
-          <p>${actor.credentials}</p>
+          <h3>${(actor.name).toUpperCase()}</h3>
           <img src="${actor.image}" alt="${actor.name}">
+          <p>${actor.credentials}</p>
         </div>
-        <h3>Filmography</h3>
+        <hr>
+        <h3>FILMOGRAPHY</h3>
+        <div class="cred-div">
     `;
 
     actor.filmography.forEach((movie) => {
-      actorCard += `
-        <div class="cred-div">
-          <h4>${movie.movie}</h4>
+      let filmCard = `
+        <div class="film-cred">
+          <h4>${(movie.movie).toUpperCase()}</h4>
           <img src="${movie.poster}" alt="${movie.movie} Poster">
           <p>Role: ${movie.role}</p>
         </div>
       `;
+      actorCard += filmCard;
     });
 
+    actorCard += "</div>";
     actorCard += "</div>";
     allActorCards += actorCard;
   });

@@ -164,4 +164,61 @@
     #user-reviews h4 {
         margin: 0%;
     }
+
+    /* actorList */
+
+    .actors-h2 {
+        margin-top: 5%;
+    }
+
+    #actor-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .actor-card {
+        margin: auto 10%;
+        margin: 0%;
+    }
+
+    .actor-div {
+        margin: auto 5%;
+    }
+
+    .actor-div img {
+        width: 150px;
+    }
+
+    .actor-card h3 {
+        margin: 5% 5%;
+        text-align: left;
+    }
+
+    .cred-div {
+        justify-self: start;
+        width: 400px;
+        height: 300px;
+        border: none;
+    }
+
+    .film-cred img {
+        width: 100px;
+        border-radius: var(--border-radius);
+        border: var(--border);
+    }
+
+    .film-cred h4 {
+        background-color: var(--secondary-color);
+        color: var(--accent-color1);
+    }
+
+    /* donations.html */
+
+    #movie-order {
+        margin: 0% 40%;
+    }
+
+    #movie-form fieldset {
+        margin: 5% 25%;
+    }
 }

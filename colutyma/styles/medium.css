@@ -214,4 +214,39 @@
         text-align: left;
     }
 
+    /* actorList */
+
+    .actor-div {
+        margin: auto 2%;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        gap: 2%;
+    }
+
+    .actor-div img {
+        justify-self: end;
+        width: 90%;
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+
+    .actor-div h3 {
+        margin: 0%;
+    }
+
+    .actor-div p {
+        margin: 0%;
+    }
+
+    /* donations.html */
+
+    #movie-order {
+        margin: 0% 35%;
+    }
+
+    #movie-form fieldset {
+        margin: 5% 20%;
+        padding: 5% 12%;
+    }
 }
