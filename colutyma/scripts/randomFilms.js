@@ -2,6 +2,11 @@ import { fetchMovies } from "./getdata.js"
 
 const featuredFilms = document.querySelector("#featured-films")
 
+if ( featuredFilms !== null ) {
+
+    displayFeaturedFilms();
+}
+
 function movieTemplate(movies) {
     movies.forEach((movie) => {
         let template = `
@@ -50,4 +55,3 @@ async function displayFeaturedFilms() {
     movieTemplate(threeFilms);
 }
 
-displayFeaturedFilms();

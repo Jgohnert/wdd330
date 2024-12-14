@@ -9,7 +9,6 @@ export async function findMovieDetails() {
     const urlTitle = new URLSearchParams(window.location.search);
     const movieTitleId = urlTitle.get("title");
 
-    console.log("Movie ID fetched:", movieTitleId);
     const movie = await findMovieBy(movieTitleId);
     
     renderMovieDetails(movie);

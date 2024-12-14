@@ -39,11 +39,17 @@ async function movieListTemplate() {
 // This function displays all the movies on the movie list page.
 async function displayMovieList() {
     const allMovies = await movieListTemplate();
-    filmList.innerHTML = allMovies;
+
+    if ( filmList !== null ) {
+      filmList.innerHTML = allMovies;
+
+    expandInfo();
+    sortMovieList();
+    } else {
 
     // open and close synopsis
     expandInfo();
-    sortMovieList();
+    }
 }
 
 // Get's the number of full stars on each movie from the movie list

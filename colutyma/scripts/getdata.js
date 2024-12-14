@@ -33,7 +33,6 @@ export async function fetchMovies() {
         const response = await fetch(movieURL);
         const data = await response.json();
         const movies = data.movies;
-        console.log(movies);
         return movies;
     } catch(error) {
         console.error("Error:", error);
@@ -45,7 +44,6 @@ export async function fetchActors() {
         const response = await fetch(actorURL);
         const data = await response.json();
         const actors = data.actors;
-        console.log(actors);
         return actors;
     } catch(error) {
         console.error("Error:", error);
