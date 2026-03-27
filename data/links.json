@@ -141,6 +141,36 @@
                     "title": "Review notes"
                 }
             ]
+        },
+        {
+            "WDD130": "Activites",
+            "links": [
+                {
+                    "url": "https://jgohnert.github.io/wdd-130/wwr/planning/site-plan-rafting.html",
+                    "title": "White Water Rafting Site Plan"
+                },
+                {
+                    "url": "https://jgohnert.github.io/wdd-130/colutyma-productions/site-plan.html",
+                    "title": "COLUTYMA Productions Site-plan"
+                },
+                {
+                    "url": "https://jgohnert.github.io/wdd-130/positioning/positioning.html",
+                    "title": "Positioning"
+                },
+                {
+                    "url": "https://jgohnert.github.io/wdd-130/web-component/component.html",
+                    "title": "Basic Website Components"
+                }
+            ]
+        },
+        {
+            "CSE121b": "Activites",
+            "links": [
+                {
+                    "url": "https://jgohnert.github.io/cse121b/",
+                    "title": "CSE 121b Activities"
+                }
+            ]
         }
     ]
 }
