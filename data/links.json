@@ -141,9 +141,12 @@
                     "title": "Review notes"
                 }
             ]
-        },
+        }
+    ],
+
+    "classes": [
         {
-            "WDD130": "Activites",
+            "wdd": "130",
             "links": [
                 {
                     "url": "https://jgohnert.github.io/wdd-130/wwr/planning/site-plan-rafting.html",
@@ -164,7 +167,7 @@
             ]
         },
         {
-            "CSE121b": "Activites",
+            "CSE": "121b",
             "links": [
                 {
                     "url": "https://jgohnert.github.io/cse121b/",
