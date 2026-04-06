@@ -16,7 +16,7 @@ async function getActivityLinks() {
 const displayCodeActivity = (activities) => {
     activities.forEach((activity) => {
         let activityList = document.createElement('li');
-        let activityTitle = document.createTextNode(`Week ${activity.week}`);
+        let activityTitle = document.createTextNode(`CSE ${activity.cse}`);
 
         activityList.appendChild(activityTitle);
 
