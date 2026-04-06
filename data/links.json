@@ -1,150 +1,70 @@
 {
-    "lessons": [
+    "webclasses": [
         {
-            "week": "01",
+            "wdd": "330",
             "links": [
-                {
-                    "url": "examples/wdd330-notes/w01-readings.docx",
-                    "title": "Review notes"
-                }
-            ]
-        },
-        {
-            "week": "02",
-            "links": [
-                {
-                    "url": "examples/wdd330-notes/w02-readings.docx",
-                    "title": "Review notes"
-                },
                 {
                     "url": "examples/w02-modify-document.html",
-                    "title": "Modifying documents"
+                    "title": "W02 - Modifying documents"
                 },
                 {
                     "url": "examples/w02-storage.html",
-                    "title": "localStorage and sessionStorage"
-                }
-            ]
-        },
-        {
-            "week": "03",
-            "links": [
-                {
-                    "url": "examples/wdd330-notes/w03-readings.docx",
-                    "title": "Review notes"
+                    "title": "W02 - localStorage and sessionStorage"
                 },
                 {
                     "url": "examples/w03-web-api.html",
-                    "title": "Web APIs"
+                    "title": "W03 - Web APIs"
                 },
                 {
                     "url": "examples/w03-settimeout-setinterval.html",
-                    "title": "setTimeout and setInterval"
-                }
-            ]
-        },
-        {
-            "week": "04",
-            "links": [
-                {
-                    "url": "examples/wdd330-notes/w04-readings.docx",
-                    "title": "Review notes"
+                    "title": "W03 - setTimeout and setInterval"
                 },
                 {
                     "url": "examples/w04-try-catch.html",
-                    "title": "Error handling"
-                }
-            ]
-        },
-        {
-            "week": "05",
-            "links": [
-                {
-                    "url": "examples/wdd330-notes/w05-readings.docx",
-                    "title": "Review notes"
+                    "title": "W04 - Error handling"
                 },
                 {
                     "url": "examples/w05-fetch.html",
-                    "title": "Fetch"
+                    "title": "W05 - Fetch"
                 },
                 {
                     "url": "examples/w05-rest-parameters.html",
-                    "title": "Rest Parameters"
-                }
-            ]
-        },
-        {
-            "week": "06",
-            "links": [
-                {
-                    "url": "examples/wdd330-notes/w06-readings.docx",
-                    "title": "Review notes"
+                    "title": "W05 - Rest Parameters"
                 },
                 {
                     "url": "examples/w06-form-properties.html",
-                    "title": "Form Properties"
+                    "title": "W06 - Form Properties"
                 },
                 {
                     "url": "examples/w06-formdata-objects.html",
-                    "title": "Formdata Objects"
-                }
-            ]
-        },
-        {
-            "week": "07",
-            "links": [
+                    "title": "W06 - Formdata Objects"
+                },
                 {
                     "url": "examples/w07-css-animations.html",
-                    "title": "CSS Animations"
+                    "title": "W07 - CSS Animations"
                 },
                 {
                     "url": "examples/w07-object-method-this.html",
-                    "title": "Object Method \"this\""
-                }
-            ]
-        },
-        {
-            "week": "08",
-            "links": [
-                {
-                    "url": "wdd330-notes/w08-readings.docx",
-                    "title": "Review notes"
-                }
-            ]
-        },
-        {
-            "week": "09",
-            "links": [
+                    "title": "W07 - Object Method \"this\""
+                },
                 {
                     "url": "examples/wdd330-notes/w09-challenge-proposals.docx",
-                    "title": "Challenge Proposal"
+                    "title": "W09 - Challenge Proposal"
                 },
                 {
                     "url": "examples/w09-currying.html",
-                    "title": "Currying"
+                    "title": "W09 - Currying"
                 },
                 {
                     "url": "examples/w09-drawing-graphics.html",
-                    "title": "Graphics"
+                    "title": "W09 - Graphics"
                 },
                 {
                     "url": "examples/w09-variable-scope-closure.html",
-                    "title": "variable Scope Closure"
+                    "title": "W09 - variable Scope Closure"
                 }
             ]
         },
-        {
-            "week": "10",
-            "links": [
-                {
-                    "url": "wdd330-notes/w10-readings.docx",
-                    "title": "Review notes"
-                }
-            ]
-        }
-    ],
-
-    "classes": [
         {
             "wdd": "130",
             "links": [
@@ -165,7 +85,10 @@
                     "title": "Basic Website Components"
                 }
             ]
-        },
+        }
+    ],
+
+    "codeclasses": [
         {
             "CSE": "121b",
             "links": [
@@ -174,6 +97,7 @@
                     "title": "CSE 121b Activities"
                 }
             ]
+
         }
     ]
 }
