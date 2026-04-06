@@ -90,7 +90,7 @@
 
     "codeclasses": [
         {
-            "CSE": "121b",
+            "cse": "121b",
             "links": [
                 {
                     "url": "https://jgohnert.github.io/cse121b/",
