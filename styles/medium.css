@@ -32,13 +32,24 @@
     }
 
     ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        column-count: 2;
+        column-fill: balance;
+    }
+
+    li {
+        break-inside: avoid;
         list-style-position: inside;
     }
 
+    ul > li {
+        margin-bottom: 1rem;
+    }
+
+    li:first-child {
+        margin-top: 0;
+    }
+
     ol {
-        list-style-position: inside;
         text-indent: -1em;
     }
 
