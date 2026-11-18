@@ -1,0 +1,96 @@
+{
+    "projects": [
+        {
+            "wdd": "330",
+            "links": [
+                {
+                    "url": "jgohnert.github.io/wdd330/colutyma/index.html",
+                    "title": "WDD330 - COLUTYMA"
+                },
+                {
+                    "url": "papaya-taiyaki-f03d07.netlify.app",
+                    "title": "WDD330 - Sleep Outside"
+                }
+            ]
+        },
+        {
+            "cse": "340",
+            "links": [
+                {
+                    "url": "cse340-ejs-jgohn.onrender.com/",
+                    "title": "CSE340 - CSE Motors"
+                }
+            ]
+        },
+        {
+            "cse": "341",
+            "links": [
+                {
+                    "url": "cse341-jgohn.onrender.com/api-docs/",
+                    "title": "CSE341 - Contacts Swagger API Docs"
+                },
+                {
+                    "url": "cse341-project2-8ji3.onrender.com/",
+                    "title": "CSE341 - D&D Magic & Monsters"
+                }
+            ]
+        },
+        {
+            "wdd": "230",
+            "links": [
+                {
+                    "url": "jgohnert.github.io/wdd230/index.html",
+                    "title": "WDD230 - Fairfax Chamber of Commerse"
+                },
+                {
+                    "url": "jgohnert.github.io/wdd230/index.html",
+                    "title": "WDD230 - Project Page"
+                }
+            ]
+        },
+        {
+            "wdd": "331r",
+            "links": [
+                {
+                    "url": "jgohnert.github.io/wdd331r/index.html",
+                    "title": "WDD331r - Portfolio"
+                },
+                {
+                    "url": "cdandrews96.github.io/group4stylestage/public/",
+                    "title": "WDD331r - Style Stage"
+                }
+            ]
+        },
+        {
+            "cse": "121b",
+            "links": [
+                {
+                    "url": "jgohnert.github.io/cse121b/jsproject/project.html",
+                    "title": "CSE121b - Loan and Budget Calculator"
+                }
+            ]
+        },
+        {
+            "wdd": "130",
+            "links": [
+                {
+                    "url": "jgohnert.github.io/wdd-130/colutyma-productions/colutyma-website.html",
+                    "title": "WDD130 - First COLUTYMA Website"
+                },
+                {
+                    "url": "jgohnert.github.io/wdd-130/wwr/index.html",
+                    "title": "WDD130 - White Water Rafting"
+                }
+            ]
+        },
+        {
+            "cse": "170",
+            "links": [
+                {
+                    "url": "jgohnert.github.io/cse170-website-project/index.html",
+                    "title": "CSE170 - cse170-website-project"
+                }
+            ]
+        }
+    ]
+}
