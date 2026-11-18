@@ -1,10 +1,10 @@
-const mainURL = 'https://jgohnert.github.io/';
-const linksURL = 'https://jgohnert.github.io/wdd330/data/project-links.json';
 
-const allActivities = document.querySelector('#projects');
+const projectLinksURL = 'https://jgohnert.github.io/wdd330/data/project-links.json';
+
+const allProjects = document.querySelector('#projects');
 
 async function getProjectLinks() {
-    const response = await fetch(linksURL);
+    const response = await fetch(projectLinksURL);
     const data = await response.json();
     const projectActivities = data.projects;
 
@@ -13,27 +13,21 @@ async function getProjectLinks() {
 
 const displayProjectActivity = (projectActivities) => {
     projectActivities.forEach((project) => {
-        let activityList = document.createElement('div');
-        let activityTitle = document.createElement('h3');
-
-        activityTitle.textContent = `WDD ${project.wdd}`;
-
-        activityList.appendChild(activityTitle);
 
         project.links.forEach((link) => {
             let linkList = document.createElement('a');
 
             linkList.href = link.url.startsWith('http')
                 ? link.url
-                : mainURL + link.url;
+                : 'https://' + link.url;
 
             linkList.textContent = link.title;
             linkList.classList.add('project-link');
+            linkList.target = '_blank';
 
-            activityList.appendChild(linkList);
+            allProjects.appendChild(linkList);
         });
 
-        allActivities.appendChild(activityList);
     });
 };
 
